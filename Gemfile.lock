@@ -26,6 +26,7 @@ GEM
     rake (10.5.0)
     roda (2.11.0)
       rack
+    sass (3.4.21)
     shotgun (0.9.1)
       rack (>= 1.0)
     sshkit (1.7.1)
@@ -47,6 +48,7 @@ DEPENDENCIES
   capistrano-rbenv
   faker-fantasy
   roda
+  sass
   shotgun
   tilt
   unicorn
