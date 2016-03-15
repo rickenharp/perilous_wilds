@@ -4,8 +4,12 @@ require 'faker/fantasy'
 
 class PerilousWilds < Roda
   plugin :render
+  plugin :assets, :css => 'style.scss'
+  compile_assets
 
   route do |r|
+    r.assets unless ENV['RACK_ENV'] == 'production'
+
     r.root do
       r.redirect '/welcome'
     end
