@@ -45,14 +45,23 @@ set :linked_dirs, fetch(:linked_dirs, []).push('bin', 'log', 'tmp/pids', 'vendor
 # set :keep_releases, 5
 
 namespace :deploy do
-
-  after :restart, :clear_cache do
-    on roles(:web), in: :groups, limit: 3, wait: 10 do
-      # Here we can do anything such as:
-      # within release_path do
-      #   execute :rake, 'cache:clear'
-      # end
+  %w[start stop].each do |command|
+    desc 'Manage Unicorn'
+    task command do
+      on roles(:app), in: :sequence, wait: 1 do
+        execute "/etc/init.d/unicorn_perilous-wilds #{command}"
+      end
     end
   end
+
+  desc 'Manage Unicorn'
+  task :restart do
+    on roles(:app), in: :sequence, wait: 1 do
+      invoke "deploy:stop"
+      invoke "deploy:start"
+    end
+  end
+
+  after :publishing, :restart
 
 end
