@@ -48,7 +48,7 @@ namespace :deploy do
     desc 'Manage puma'
     task command do
       on roles(:app), in: :sequence, wait: 1 do
-        execute "/etc/init.d/puma_perilous-wilds #{command}"
+        execute "/etc/init.d/puma #{command} /opt/www/perilous-wilds.geekwire.net/current"
       end
     end
   end
