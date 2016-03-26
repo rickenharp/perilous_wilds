@@ -45,10 +45,10 @@ set :linked_dirs, fetch(:linked_dirs, []).push('bin', 'log', 'tmp/pids', 'vendor
 
 namespace :deploy do
   %w[start stop].each do |command|
-    desc 'Manage Unicorn'
+    desc 'Manage puma'
     task command do
       on roles(:app), in: :sequence, wait: 1 do
-        execute "/etc/init.d/unicorn_perilous-wilds #{command}"
+        execute "/etc/init.d/puma #{command} /opt/www/perilous-wilds.geekwire.net/current"
       end
     end
   end
