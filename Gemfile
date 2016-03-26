@@ -4,7 +4,7 @@ source 'https://rubygems.org'
 gem 'roda'
 gem 'tilt'
 gem 'sass'
-gem 'unicorn'
+gem 'puma'
 gem 'faker-fantasy'
 
 group :development do
