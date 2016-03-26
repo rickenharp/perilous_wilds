@@ -1,6 +1,5 @@
 require 'roda'
 require 'tilt/erb'
-require 'tilt/sass'
 require 'faker/fantasy'
 
 class PerilousWilds < Roda
@@ -9,7 +8,7 @@ class PerilousWilds < Roda
   compile_assets
 
   route do |r|
-    r.assets # unless ENV['RACK_ENV'] == 'production'
+    r.assets unless ENV['RACK_ENV'] == 'production'
 
     r.root do
       r.redirect '/welcome'
