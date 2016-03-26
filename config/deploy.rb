@@ -2,7 +2,7 @@
 lock '3.4.0'
 
 set :application, 'perilous-wilds'
-set :repo_url, 'ssh://git@gitlab.geekwire.net:2288/rickenharp/perilous_wilds.git'
+set :repo_url, 'ssh://git@gitlab.geekwire.net/rickenharp/perilous_wilds.git'
 
 set :rbenv_type, :user # or :system, depends on your rbenv setup
 set :rbenv_ruby, '2.3.0'
@@ -10,8 +10,7 @@ set :bundle_binstubs, -> { shared_path.join('bin') }
 set :bundle_jobs, 4
 
 set :ssh_options, {
-  forward_agent: true,
-  port: 2288
+  forward_agent: true
 }
 
 # Default branch is :master
