@@ -5,11 +5,17 @@ gem 'roda'
 gem 'tilt'
 gem 'sass'
 gem 'unicorn'
-gem 'faker-fantasy'
 
 group :development do
   gem 'shotgun'
   gem 'capistrano'
   gem 'capistrano-bundler'
   gem 'capistrano-rbenv'
+  gem 'rspec'
+  gem 'awesome_print'
+  gem 'pry'
+end
+
+group :test do
+  gem 'capybara'
 end
