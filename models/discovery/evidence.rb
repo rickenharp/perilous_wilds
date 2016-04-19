@@ -15,7 +15,7 @@ class Discovery < RandomElement
     end
 
     def remains
-      'Remains/Debris'
+      @remains ||= "Remains/Debris<br />#{Remains.new}"
     end
 
     def stash
