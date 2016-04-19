@@ -14,7 +14,7 @@ class Discovery < RandomElement
     private
 
     def lair
-      'Lair'
+      @lair ||= "Lair<br />#{Lair.new}"
     end
 
     def obstacle
