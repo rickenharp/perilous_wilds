@@ -18,7 +18,7 @@ class Discovery < RandomElement
     end
 
     def infrastructure
-      'Infrastructure'
+      @infrastructure ||= "Infrastructure<br />#{Infrastructure.new}"
     end
 
     def dwelling
