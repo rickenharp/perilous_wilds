@@ -1,3 +1,4 @@
+require 'pry'
 shared_examples 'a random element' do
   describe '#initialize' do
     it 'takes an optional parameter' do
@@ -11,7 +12,7 @@ shared_examples 'a random element' do
 
   describe '#to_s' do
     it 'returns one of the OPTIONS' do
-      rendered_options = described_class::OPTIONS.map do |string|
+      rendered_options = described_class::OPTIONS.values.map do |string|
         template = Tilt::ERBTemplate.new { string }
         template.render(subject)
       end

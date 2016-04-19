@@ -5,14 +5,16 @@ require 'models/region/terrain'
 require 'tilt/erb'
 
 class Region < RandomElement
-  OPTIONS = [
-    '<%= adjective %> <%= terrain %>',
-    '<%= terrain %> of (the) <%= noun %>',
-    'The <%= adjective %> <%= terrain %>',
-    '<%= noun %> <%= terrain %>',
-    '<%= noun %>\'s <%= adjective %> <%= terrain %>',
-    '<%= adjective %> <%= terrain %> of (the) <%= noun %>'
-  ].freeze
+  OPTIONS = RangedHash.new(
+    [
+      '<%= adjective %> <%= terrain %>',
+      '<%= terrain %> of (the) <%= noun %>',
+      'The <%= adjective %> <%= terrain %>',
+      '<%= noun %> <%= terrain %>',
+      '<%= noun %>\'s <%= adjective %> <%= terrain %>',
+      '<%= adjective %> <%= terrain %> of (the) <%= noun %>'
+    ]
+  ).freeze
 
   private
 
