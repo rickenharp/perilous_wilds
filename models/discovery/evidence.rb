@@ -19,7 +19,7 @@ class Discovery < RandomElement
     end
 
     def stash
-      'Stash/Cache'
+      @stash ||= "Stash/Cache<br />#{Stash.new}"
     end
   end
 end
