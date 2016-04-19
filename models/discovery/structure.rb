@@ -26,7 +26,7 @@ class Discovery < RandomElement
     end
 
     def burial
-      'Burial/Religious'
+      @burial ||= "Burial/Religious<br />#{Burial.new}"
     end
 
     def steading
