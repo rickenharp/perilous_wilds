@@ -11,15 +11,21 @@ class Discovery < RandomElement
     private
 
     def tracks
-      @tracks ||= "Tracks/Spoor<br />#{Tracks.new}"
+      self.sub_element = Tracks.new
+      'Tracks/Spoor'
+      # @tracks ||= "Tracks/Spoor<br />#{Tracks.new}"
     end
 
     def remains
-      @remains ||= "Remains/Debris<br />#{Remains.new}"
+      self.sub_element = Remains.new
+      'Remains/Debris'
+      # @remains ||= "Remains/Debris<br />#{Remains.new}"
     end
 
     def stash
-      @stash ||= "Stash/Cache<br />#{Stash.new}"
+      self.sub_element = Stash.new
+      'Stash/Cache'
+      # @stash ||= "Stash/Cache<br />#{Stash.new}"
     end
   end
 end

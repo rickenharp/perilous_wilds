@@ -11,15 +11,21 @@ class Discovery < RandomElement
     private
 
     def arcane
-      @arcane ||= "Arcane<br/>#{Arcane.new}"
+      self.sub_element = Arcane.new
+      'Arcane'
+      # @arcane ||= "Arcane<br/>#{Arcane.new}"
     end
 
     def planar
-      @planar ||= "Planar<br />#{Planar.new}"
+      self.sub_element = Planar.new
+      'Planar'
+      # @planar ||= "Planar<br />#{Planar.new}"
     end
 
     def divine
-      @divine ||= "Divine<br />#{Divine.new}"
+      self.sub_element = Divine.new
+      'Divine'
+      # @divine ||= "Divine<br />#{Divine.new}"
     end
   end
 end

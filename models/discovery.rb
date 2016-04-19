@@ -8,15 +8,21 @@ class Discovery < RandomElement
   }.freeze)
 
   def unnatural_feature
-    @unnatural_feature ||= "Unnatural Feature<br />#{UnnaturalFeature.new}"
+    self.sub_element = UnnaturalFeature.new
+    'Unnatural Feature'
+    # @unnatural_feature ||= "Unnatural Feature<br />#{UnnaturalFeature.new}"
   end
 
   def natural_feature
-    @natural_feature ||= "Natural Feature<br />#{NaturalFeature.new}"
+    self.sub_element = NaturalFeature.new
+    'Natural Feature'
+    # @natural_feature ||= "Natural Feature<br />#{NaturalFeature.new}"
   end
 
   def evidence
-    @evidence ||= "Evidence<br />#{Evidence.new}"
+    self.sub_element = Evidence.new
+    'Evidence'
+    # @evidence ||= "Evidence<br />#{Evidence.new}"
   end
 
   def creature
@@ -24,6 +30,8 @@ class Discovery < RandomElement
   end
 
   def structure
-    @structure ||= "Structure<br />#{Structure.new}"
+    self.sub_element = Structure.new
+    'Structure'
+    # @structure ||= "Structure<br />#{Structure.new}"
   end
 end
