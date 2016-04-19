@@ -26,7 +26,7 @@ class Discovery < RandomElement
     end
 
     def water_feature
-      'Water Feature'
+      @water_feature ||= "Water Feature<br />#{WaterFeature.new}"
     end
 
     def landmark
