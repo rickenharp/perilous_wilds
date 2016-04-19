@@ -36,7 +36,7 @@ class PerilousWilds < Roda
     end
 
     r.is 'discovery' do
-      @discovery = 'Natural Feature'
+      @discovery = Discovery.new
       view(:discovery)
     end
   end
