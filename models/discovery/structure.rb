@@ -22,7 +22,7 @@ class Discovery < RandomElement
     end
 
     def dwelling
-      'Dwelling'
+      @dwelling ||= "Dwelling<br />#{Dwelling.new}"
     end
 
     def burial
