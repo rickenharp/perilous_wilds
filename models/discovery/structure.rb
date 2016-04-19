@@ -30,11 +30,11 @@ class Discovery < RandomElement
     end
 
     def steading
-      'Steading'
+      'Steading' # TODO: Steading
     end
 
     def ruin
-      'Ruin'
+      @ruin ||= "Ruin<br />#{Ruin.new}"
     end
   end
 end

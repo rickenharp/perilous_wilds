@@ -10,4 +10,10 @@ class RandomElement
     template_string = self.class::OPTIONS[@number]
     Tilt::ERBTemplate.new { template_string }.render(self)
   end
+
+  private
+
+  def d(max, addition)
+    rand(1..max) + addition
+  end
 end
