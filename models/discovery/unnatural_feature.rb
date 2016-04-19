@@ -19,7 +19,7 @@ class Discovery < RandomElement
     end
 
     def divine
-      'Divine'
+      @divine ||= "Divine<br />#{Divine.new}"
     end
   end
 end
