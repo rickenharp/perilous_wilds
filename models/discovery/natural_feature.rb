@@ -14,27 +14,39 @@ class Discovery < RandomElement
     private
 
     def lair
-      @lair ||= "Lair<br />#{Lair.new}"
+      self.sub_element = Lair.new
+      'Lair'
+      # @lair ||= "Lair<br />#{Lair.new}"
     end
 
     def obstacle
-      @obstacle ||= "Obstacle<br />#{Obstacle.new}"
+      self.sub_element = Obstacle.new
+      'Obstacle'
+      # @obstacle ||= "Obstacle<br />#{Obstacle.new}"
     end
 
     def terrain_change
-      @terrain_change ||= "Terrain Change<br />#{TerrainChange.new}"
+      self.sub_element = TerrainChange.new
+      'Terrain Change'
+      # @terrain_change ||= "Terrain Change<br />#{TerrainChange.new}"
     end
 
     def water_feature
-      @water_feature ||= "Water Feature<br />#{WaterFeature.new}"
+      self.sub_element = WaterFeature.new
+      'Water Feature'
+      # @water_feature ||= "Water Feature<br />#{WaterFeature.new}"
     end
 
     def landmark
-      @landmark ||= "Landmark<br />#{Landmark.new}"
+      self.sub_element = Landmark.new
+      'Landmark'
+      # @landmark ||= "Landmark<br />#{Landmark.new}"
     end
 
     def resource
-      @resource ||= "Resource<br />#{Resource.new}"
+      self.sub_element = Resource.new
+      'Resource'
+      # @resource ||= "Resource<br />#{Resource.new}"
     end
   end
 end

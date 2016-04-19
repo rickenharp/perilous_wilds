@@ -12,23 +12,23 @@ class Discovery < RandomElement
       private
 
       def ruined_infrastructure
-        @ri ||= "Ruined #{Discovery::Structure::Infrastructure.new(d(6, +6))}"
+        @ri ||= Discovery::Structure::Infrastructure.new(d(6, +6))
       end
 
       def ruined_dwelling
-        @rd ||= "Ruined #{Discovery::Structure::Dwelling.new(d(8, +4))}"
+        @rd ||= Discovery::Structure::Dwelling.new(d(8, +4))
       end
 
       def ruined_burial
-        @rb ||= "Ruined #{Discovery::Structure::Burial.new(d(8, +4))}"
+        @rb ||= Discovery::Structure::Burial.new(d(8, +4))
       end
 
       def ruined_steading
-        'Ruined Steading' # TODO: Steading
+        'Steading' # TODO: Steading
       end
 
       def ruined_dungeon
-        'Ruined Dungeon' # TODO: Dungeon
+        'Dungeon' # TODO: Dungeon
       end
     end
   end

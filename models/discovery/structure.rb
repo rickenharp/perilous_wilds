@@ -14,19 +14,27 @@ class Discovery < RandomElement
     private
 
     def enigmatic
-      @enigmatic ||= "Enigmatic<br />#{Enigmatic.new}"
+      self.sub_element = Enigmatic.new
+      'Enigmatic'
+      # @enigmatic ||= "Enigmatic<br />#{Enigmatic.new}"
     end
 
     def infrastructure
-      @infrastructure ||= "Infrastructure<br />#{Infrastructure.new}"
+      self.sub_element = Infrastructure.new
+      'Infrastructure'
+      # @infrastructure ||= "Infrastructure<br />#{Infrastructure.new}"
     end
 
     def dwelling
-      @dwelling ||= "Dwelling<br />#{Dwelling.new}"
+      self.sub_element = Dwelling.new
+      'Dwelling'
+      # @dwelling ||= "Dwelling<br />#{Dwelling.new}"
     end
 
     def burial
-      @burial ||= "Burial/Religious<br />#{Burial.new}"
+      self.sub_element = Burial.new
+      'Burial/Religious'
+      # @burial ||= "Burial/Religious<br />#{Burial.new}"
     end
 
     def steading
@@ -34,7 +42,9 @@ class Discovery < RandomElement
     end
 
     def ruin
-      @ruin ||= "Ruin<br />#{Ruin.new}"
+      self.sub_element = Ruin.new
+      'Ruin'
+      # @ruin ||= "Ruin<br />#{Ruin.new}"
     end
   end
 end
