@@ -1,10 +1,12 @@
+$LOAD_PATH << File.expand_path('.')
+
 require 'roda'
 require 'tilt/erb'
-require 'faker/fantasy'
+require 'models'
 
 class PerilousWilds < Roda
   plugin :render
-  plugin :assets, :css => 'style.scss'
+  plugin :assets, css: 'style.scss'
   compile_assets
 
   route do |r|
@@ -19,10 +21,12 @@ class PerilousWilds < Roda
     end
 
     r.is 'region' do
+      @region = Region.new
       view(:region)
     end
 
     r.is 'place' do
+      @place = Place.new
       view(:place)
     end
   end
