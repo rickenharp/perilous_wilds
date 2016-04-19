@@ -22,7 +22,7 @@ class Discovery < RandomElement
     end
 
     def terrain_change
-      'Terrain Change'
+      @terrain_change ||= "Terrain Change<br />#{TerrainChange.new}"
     end
 
     def water_feature
