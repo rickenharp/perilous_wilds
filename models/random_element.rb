@@ -1,7 +1,9 @@
+require 'awesome_print'
+
 class RandomElement
   def initialize(number = nil)
-    last_index = self.class::OPTIONS.rindex { true }
-    @number = number || rand(0..last_index)
+    last_index = self.class::OPTIONS.max
+    @number = number || rand(1..last_index)
   end
 
   def to_s

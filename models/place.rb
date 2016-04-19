@@ -1,18 +1,17 @@
 require 'models/random_element'
-# require 'models/place/adjective'
-# require 'models/place/noun'
-# require 'models/place/feature'
 require 'tilt/erb'
 
 class Place < RandomElement
-  OPTIONS = [
-    'The <%= feature %>',
-    'The <%= adjective %> <%= feature %>',
-    'The <%= feature %> of (the) <%= noun %>',
-    'The <%= noun %>\'s <%= feature %>',
-    '<%= feature %> of the <%= adjective %> <%= noun %>',
-    'The <%= adjective %> <%= noun %>'
-  ].freeze
+  OPTIONS = RangedHash.new(
+    [
+      'The <%= feature %>',
+      'The <%= adjective %> <%= feature %>',
+      'The <%= feature %> of (the) <%= noun %>',
+      'The <%= noun %>\'s <%= feature %>',
+      '<%= feature %> of the <%= adjective %> <%= noun %>',
+      'The <%= adjective %> <%= noun %>'
+    ]
+  ).freeze
 
   private
 
