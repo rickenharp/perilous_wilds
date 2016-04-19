@@ -15,7 +15,7 @@ class Discovery < RandomElement
     end
 
     def planar
-      'Planar'
+      @planar ||= "Planar<br />#{Planar.new}"
     end
 
     def divine
