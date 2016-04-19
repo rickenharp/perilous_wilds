@@ -16,7 +16,7 @@ class Discovery < RandomElement
   end
 
   def evidence
-    'Evidence'
+    @evidence ||= "Evidence<br />#{Evidence.new}"
   end
 
   def creature
