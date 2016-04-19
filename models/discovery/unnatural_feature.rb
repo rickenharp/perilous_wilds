@@ -12,20 +12,20 @@ class Discovery < RandomElement
 
     def arcane
       self.sub_element = Arcane.new
+      details['Alignment'] = Details::Alignment.new
       'Arcane'
-      # @arcane ||= "Arcane<br/>#{Arcane.new}"
     end
 
     def planar
       self.sub_element = Planar.new
+      details['Alignment'] = Details::Alignment.new
       'Planar'
-      # @planar ||= "Planar<br />#{Planar.new}"
     end
 
     def divine
       self.sub_element = Divine.new
+      details['Alignment'] = Details::Alignment.new
       'Divine'
-      # @divine ||= "Divine<br />#{Divine.new}"
     end
   end
 end

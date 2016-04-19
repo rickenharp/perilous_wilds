@@ -36,7 +36,7 @@ class PerilousWilds < Roda
     end
 
     r.is 'discovery' do
-      @discovery = Discovery.new
+      @discovery = Discovery.new(1)
       view(:discovery)
     end
   end
