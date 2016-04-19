@@ -34,7 +34,7 @@ class Discovery < RandomElement
     end
 
     def resource
-      'Resource'
+      @resource ||= "Resource<br />#{Resource.new}"
     end
   end
 end
