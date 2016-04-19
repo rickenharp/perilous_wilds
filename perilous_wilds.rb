@@ -29,5 +29,10 @@ class PerilousWilds < Roda
       @place = Place.new
       view(:place)
     end
+
+    r.is 'item' do
+      @item = Item.new
+      view(:item)
+    end
   end
 end
