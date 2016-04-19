@@ -8,8 +8,7 @@ class Discovery < RandomElement
   }.freeze)
 
   def unnatural_feature
-    'Unnatural Feature'
-    # @utility_item ||= Utility.new
+    @unnatural_feature ||= "Unnatural Feature<br />#{UnnaturalFeature.new}"
   end
 
   def natural_feature

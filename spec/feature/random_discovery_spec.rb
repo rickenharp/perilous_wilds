@@ -8,5 +8,6 @@ RSpec.describe "The app", type: :feature do
     click_on 'Random discovery'
 
     expect(page).to have_content('Unnatural Feature')
+    expect(page).to have_content('Arcane')
   end
 end
