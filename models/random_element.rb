@@ -2,8 +2,10 @@ require 'awesome_print'
 
 class RandomElement
   attr_accessor :sub_element
+  attr_accessor :details
 
   def initialize(number = nil)
+    @details = {}
     last_index = self.class::OPTIONS.max
     @number = number || rand(1..last_index)
     template_string = self.class::OPTIONS[@number]
