@@ -18,7 +18,7 @@ class Discovery < RandomElement
     end
 
     def obstacle
-      'Obstacle'
+      @obstacle ||= "Obstacle<br />#{Obstacle.new}"
     end
 
     def terrain_change
