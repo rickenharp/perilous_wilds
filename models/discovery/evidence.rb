@@ -11,7 +11,7 @@ class Discovery < RandomElement
     private
 
     def tracks
-      'Tracks/Spoor'
+      @tracks ||= "Tracks/Spoor<br />#{Tracks.new}"
     end
 
     def remains
