@@ -11,7 +11,7 @@ class Discovery < RandomElement
     private
 
     def arcane
-      'Arcane'
+      @arcane ||= "Arcane<br/>#{Arcane.new}"
     end
 
     def planar

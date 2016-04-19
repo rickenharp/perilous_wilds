@@ -9,5 +9,6 @@ RSpec.describe "The app", type: :feature do
 
     expect(page).to have_content('Unnatural Feature')
     expect(page).to have_content('Arcane')
+    expect(page).to have_content('blight')
   end
 end
