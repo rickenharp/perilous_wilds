@@ -14,7 +14,7 @@ class Discovery < RandomElement
     private
 
     def enigmatic
-      'Enigmatic'
+      @enigmatic ||= "Enigmatic<br />#{Enigmatic.new}"
     end
 
     def infrastructure
