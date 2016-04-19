@@ -24,6 +24,6 @@ class Discovery < RandomElement
   end
 
   def structure
-    'Structure'
+    @structure ||= "Structure<br />#{Structure.new}"
   end
 end
