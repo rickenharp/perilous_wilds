@@ -1,6 +1,6 @@
 require 'roda_helper'
 
-RSpec.describe "The app", type: :feature do
+RSpec.describe 'The app', type: :feature do
   it 'returns a random discovery' do
     Kernel.srand(1338)
 
