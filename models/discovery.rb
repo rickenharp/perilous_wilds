@@ -12,8 +12,7 @@ class Discovery < RandomElement
   end
 
   def natural_feature
-    'Natural Feature'
-    # @art_item ||= Art.new
+    @natural_feature ||= "Natural Feature<br />#{NaturalFeature.new}"
   end
 
   def evidence
