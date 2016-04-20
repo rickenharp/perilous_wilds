@@ -33,7 +33,7 @@ class Table
 
   private
 
-  def d(max, addition)
+  def d(max, addition = 0)
     rand(1..max) + addition
   end
 end
