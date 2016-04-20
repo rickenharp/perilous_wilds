@@ -1,9 +1,23 @@
-@import url(https://fonts.googleapis.com/css?family=Averia+Serif+Libre:700);
+@function google-font($n) {
+  @return 'https://fonts.googleapis.com/css?family=' + $n;
+}
+
+$font-url: google-font('Averia+Serif+Libre:700');
+@import url($font-url);
+
+$light-brown: #e5cdb2;
 
 body {
+  background: $light-brown;
+
+
   h1 {
     font-family: 'Averia Serif Libre';
-    font-size: 4em;
+    font-size: 3em;
   }
-  background: #E5CDB2;
+
+
+  p {
+    font-size: 2em;
+  }
 }

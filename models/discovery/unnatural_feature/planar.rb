@@ -1,12 +1,17 @@
-class Discovery < RandomElement
-  class UnnaturalFeature < RandomElement
-    class Planar < RandomElement
+class Discovery < Table
+  class UnnaturalFeature < Table
+    class Planar < Table
       OPTIONS = RangedHash.new(
         (1..4) => 'distortion/warp',
         (5..8) => 'portal/gate',
         (9..10) => 'rift/tear',
         (11..12) => 'outpost'
       ).freeze
+
+      def add_details
+        add_detail('Alignment', Details::Alignment.new)
+        add_detail('Element', Details::Element.new)
+      end
     end
   end
 end

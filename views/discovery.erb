@@ -1,9 +1,13 @@
 <h1>Discovery</h1>
-<ul>
-  <% @discovery.elements.each do |element| %>
-  <li><%= element.to_s %></li>
-  <% end %>
-</ul>
+<p>
+<%= @discovery.elements.join(' &rarr; ') %>
+</p>
+
+<% @discovery.details.each do |name, value| %>
+<p>
+  <b><%= name %>:</b> <i><%= value %></i>
+</p>
+<% end %>
 
 <a href="/discovery">reload</a><br>
 <a href="/welcome">back</a>

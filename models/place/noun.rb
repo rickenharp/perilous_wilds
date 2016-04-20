@@ -1,7 +1,7 @@
-require 'models/random_element'
+require 'models/table'
 
-class Place < RandomElement
-  class Noun < RandomElement
+class Place < Table
+  class Noun < Table
     OPTIONS = RangedHash.new(
       %w(
         Arm Ash Blood Child Cinder Corpse Crystal Dagger Death Demon Devil Doom

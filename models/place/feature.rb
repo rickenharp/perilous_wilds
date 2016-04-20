@@ -1,7 +1,7 @@
-require 'models/random_element'
+require 'models/table'
 
-class Place < RandomElement
-  class Feature < RandomElement
+class Place < Table
+  class Feature < Table
     OPTIONS = RangedHash.new(
       %w(
         Barrier Beach Bowl Camp Cave Circle City Cliff Crater Crossing Crypt Den

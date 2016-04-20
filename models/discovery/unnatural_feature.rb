@@ -1,7 +1,7 @@
-require 'models/random_element'
+require 'models/table'
 
-class Discovery < RandomElement
-  class UnnaturalFeature < RandomElement
+class Discovery < Table
+  class UnnaturalFeature < Table
     OPTIONS = RangedHash.new(
       (1..9) => '<%= arcane %>',
       (10..11) => '<%= planar %>',
@@ -11,21 +11,18 @@ class Discovery < RandomElement
     private
 
     def arcane
-      self.sub_element = Arcane.new
+      self.sub_table = Arcane.new
       'Arcane'
-      # @arcane ||= "Arcane<br/>#{Arcane.new}"
     end
 
     def planar
-      self.sub_element = Planar.new
+      self.sub_table = Planar.new
       'Planar'
-      # @planar ||= "Planar<br />#{Planar.new}"
     end
 
     def divine
-      self.sub_element = Divine.new
+      self.sub_table = Divine.new
       'Divine'
-      # @divine ||= "Divine<br />#{Divine.new}"
     end
   end
 end

@@ -14,6 +14,9 @@ group :development do
   gem 'rspec'
   gem 'awesome_print'
   gem 'pry'
+  gem 'rubycritic'
+  gem 'guard'
+  gem 'guard-rspec'
 end
 
 group :test do
