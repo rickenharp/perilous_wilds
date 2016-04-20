@@ -21,6 +21,7 @@ class Creature < Table
     end
 
     def legendary
+      self.sub_table = Legendary.new
       'Legendary'
     end
 
