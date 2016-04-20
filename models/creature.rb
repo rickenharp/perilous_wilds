@@ -16,6 +16,7 @@ class Creature < Table
   def human
     add_detail('Activity', Details::Activity.new)
     add_detail('Alignment', Details::Alignment.new)
+    add_detail('Disposition', Details::Disposition.new)
     'Human'
   end
 
