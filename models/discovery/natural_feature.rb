@@ -1,7 +1,7 @@
-require 'models/random_element'
+require 'models/table'
 
-class Discovery < RandomElement
-  class NaturalFeature < RandomElement
+class Discovery < Table
+  class NaturalFeature < Table
     OPTIONS = RangedHash.new(
       (1..2) => '<%= lair %>',
       (3..4) => '<%= obstacle %>',

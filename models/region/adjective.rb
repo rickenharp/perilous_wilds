@@ -1,7 +1,7 @@
-require 'models/random_element'
+require 'models/table'
 
-class Region < RandomElement
-  class Adjective < RandomElement
+class Region < Table
+  class Adjective < Table
     OPTIONS = RangedHash.new(
       %w(
         Ageless Ashen Black Blessed Blighted Blue Broken Burning Cold Cursed

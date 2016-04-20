@@ -1,10 +1,10 @@
-require 'models/random_element'
+require 'models/table'
 require 'models/region/adjective'
 require 'models/region/noun'
 require 'models/region/terrain'
 require 'tilt/erb'
 
-class Region < RandomElement
+class Region < Table
   OPTIONS = RangedHash.new(
     [
       '<%= adjective %> <%= terrain %>',

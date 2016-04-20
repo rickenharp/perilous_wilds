@@ -1,6 +1,6 @@
-class Discovery < RandomElement
-  class Structure < RandomElement
-    class Infrastructure < RandomElement
+class Discovery < Table
+  class Structure < Table
+    class Infrastructure < Table
       OPTIONS = RangedHash.new(
         (1..4) => 'track/path',
         (5..8) => 'road',

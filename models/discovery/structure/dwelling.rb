@@ -1,6 +1,6 @@
-class Discovery < RandomElement
-  class Structure < RandomElement
-    class Dwelling < RandomElement
+class Discovery < Table
+  class Structure < Table
+    class Dwelling < Table
       OPTIONS = RangedHash.new(
         (1..3) => 'campsite',
         (4..6) => 'hovel/hut',

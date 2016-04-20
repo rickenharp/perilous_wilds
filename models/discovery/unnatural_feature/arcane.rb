@@ -1,6 +1,6 @@
-class Discovery < RandomElement
-  class UnnaturalFeature < RandomElement
-    class Arcane < RandomElement
+class Discovery < Table
+  class UnnaturalFeature < Table
+    class Arcane < Table
       OPTIONS = RangedHash.new(
         (1..2) => 'residue',
         (3..5) => 'blight',

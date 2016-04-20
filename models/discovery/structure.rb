@@ -1,7 +1,7 @@
-require 'models/random_element'
+require 'models/table'
 
-class Discovery < RandomElement
-  class Structure < RandomElement
+class Discovery < Table
+  class Structure < Table
     OPTIONS = RangedHash.new(
       (1..1) => '<%= enigmatic %>',
       (2..3) => '<%= infrastructure %>',

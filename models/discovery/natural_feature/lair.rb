@@ -1,6 +1,6 @@
-class Discovery < RandomElement
-  class NaturalFeature < RandomElement
-    class Lair < RandomElement
+class Discovery < Table
+  class NaturalFeature < Table
+    class Lair < Table
       OPTIONS = RangedHash.new(
         (1..3) => 'burrow',
         (4..7) => 'cave/tunnel',
