@@ -1,6 +1,6 @@
-class Discovery < RandomElement
-  class NaturalFeature < RandomElement
-    class Landmark < RandomElement
+class Discovery < Table
+  class NaturalFeature < Table
+    class Landmark < Table
       OPTIONS = RangedHash.new(
         (1..3) => 'water-based (waterfall, geyser, etc.)',
         (4..6) => 'plant-based (ancient tree, giant flowers, etc.)',

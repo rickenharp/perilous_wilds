@@ -1,5 +1,5 @@
-class Item < RandomElement
-  class Utility < RandomElement
+class Item < Table
+  class Utility < Table
     OPTIONS = RangedHash.new(
       %w(
         key/lockpick potion/food clothing/cloak decanter/vessel/cup

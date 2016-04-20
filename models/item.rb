@@ -1,4 +1,4 @@
-class Item < RandomElement
+class Item < Table
   OPTIONS = RangedHash.new({
     (1..8) => '<%= utility_item %>',
     (9..12) => '<%= art_item %>'

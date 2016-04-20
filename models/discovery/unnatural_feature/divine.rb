@@ -1,6 +1,6 @@
-class Discovery < RandomElement
-  class UnnaturalFeature < RandomElement
-    class Divine < RandomElement
+class Discovery < Table
+  class UnnaturalFeature < Table
+    class Divine < Table
       OPTIONS = RangedHash.new(
         (1..3) => 'mark/sign',
         (4..6) => 'cursed place',

@@ -1,5 +1,5 @@
-class Item < RandomElement
-  class Art < RandomElement
+class Item < Table
+  class Art < Table
     OPTIONS = RangedHash.new(
       %w(
         trinket/charm painting/pottery ring/gloves carpet/tapestry

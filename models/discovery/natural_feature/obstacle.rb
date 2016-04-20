@@ -1,6 +1,6 @@
-class Discovery < RandomElement
-  class NaturalFeature < RandomElement
-    class Obstacle < RandomElement
+class Discovery < Table
+  class NaturalFeature < Table
+    class Obstacle < Table
       OPTIONS = RangedHash.new(
         (1..5) => 'difficult ground (specific to terrain)',
         (6..8) => 'cliff/crevasse/chasm',

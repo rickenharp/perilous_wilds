@@ -1,7 +1,7 @@
-require 'models/random_element'
+require 'models/table'
 require 'tilt/erb'
 
-class Place < RandomElement
+class Place < Table
   OPTIONS = RangedHash.new(
     [
       'The <%= feature %>',

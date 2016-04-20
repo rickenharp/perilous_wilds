@@ -1,6 +1,6 @@
-class Discovery < RandomElement
-  class Structure < RandomElement
-    class Ruin < RandomElement
+class Discovery < Table
+  class Structure < Table
+    class Ruin < Table
       OPTIONS = RangedHash.new(
         (1..2) => '<%= ruined_infrastructure %>',
         (3..4) => '<%= ruined_dwelling %>',
