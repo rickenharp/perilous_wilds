@@ -30,6 +30,7 @@ class Creature < Table
       add_detail('Alignment', Details::Alignment.new)
       add_detail('Disposition', Details::Disposition.new)
       add_detail('No. Appearing', Details::NumberAppearing.new)
+      add_detail('Size', Details::Size.new)
     end
   end
 end

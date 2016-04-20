@@ -29,6 +29,7 @@ class Creature < Table
       add_detail('Activity', Details::Activity.new)
       add_detail('Disposition', Details::Disposition.new)
       add_detail('No. Appearing', Details::NumberAppearing.new)
+      add_detail('Size', Details::Size.new)
     end
   end
 end
