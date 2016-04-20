@@ -1,0 +1,3 @@
+UncommunicativeMethodName:
+  accept:
+    - !ruby/regexp /d/

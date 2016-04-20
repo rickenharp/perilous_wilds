@@ -1,6 +1,6 @@
-class Discovery < RandomElement
-  class Evidence < RandomElement
-    class Tracks < RandomElement
+class Discovery < Table
+  class Evidence < Table
+    class Tracks < Table
       OPTIONS = RangedHash.new(
         (1..3) => 'faint/unclear',
         (4..6) => 'definite/clear',

@@ -1,7 +1,7 @@
-require 'models/random_element'
+require 'models/table'
 
-class Region < RandomElement
-  class Noun < RandomElement
+class Region < Table
+  class Noun < Table
     OPTIONS = RangedHash.new(
       %w(
         Ash Bone Darkness Dead Death Desolation Despair Devil Doom Dragon Fate
