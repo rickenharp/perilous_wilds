@@ -9,6 +9,7 @@ class Creature < Table
   private
 
   def beast
+    self.sub_table = Beast.new
     'Beast'
   end
 
