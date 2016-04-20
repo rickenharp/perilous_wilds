@@ -4,7 +4,7 @@ module Details
       (1..2) => 'divination',
       (3..4) => 'enchantment',
       (5..6) => 'evocation',
-      (7..8) => 'evocation',
+      (7..8) => 'illusion',
       (9..10) => 'necromancy',
       (11..12) => 'summoning'
     ).freeze
