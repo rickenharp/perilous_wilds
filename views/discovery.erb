@@ -2,14 +2,13 @@
 <ul>
   <% @discovery.elements.each do |element| %>
   <li><%= element.to_s %></li>
-    <% element.details.each do |name, value| %>
-    <dl>
-      <dt><%= name %></dt>
-      <dd><%= value %></dd>
-    </dl>
-    <% end %>
   <% end %>
 </ul>
+<% @discovery.details.each do |name, value| %>
+<p>
+  <b><%= name %>:</b> <i><%= value %></i>
+</p>
+<% end %>
 
 <a href="/discovery">reload</a><br>
 <a href="/welcome">back</a>
