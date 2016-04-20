@@ -11,19 +11,19 @@ class Discovery < Table
     private
 
     def arcane
-      self.sub_element = Arcane.new
+      self.sub_table = Arcane.new
       details['Alignment'] = Details::Alignment.new
       'Arcane'
     end
 
     def planar
-      self.sub_element = Planar.new
+      self.sub_table = Planar.new
       details['Alignment'] = Details::Alignment.new
       'Planar'
     end
 
     def divine
-      self.sub_element = Divine.new
+      self.sub_table = Divine.new
       details['Alignment'] = Details::Alignment.new
       'Divine'
     end

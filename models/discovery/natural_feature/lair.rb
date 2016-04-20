@@ -12,7 +12,7 @@ class Discovery < Table
       private
 
       def ruins
-        self.sub_element = Discovery::Structure::Ruin.new
+        self.sub_table = Discovery::Structure::Ruin.new
         'ruins'
       end
     end

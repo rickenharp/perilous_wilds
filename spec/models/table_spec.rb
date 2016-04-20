@@ -31,12 +31,12 @@ RSpec.describe Table do
       private
 
       def sub_table_one
-        self.sub_element = SubTableOne.new(2)
+        self.sub_table = SubTableOne.new(2)
         'SubTableOne'
       end
 
       def sub_table_two
-        self.sub_element = SubTableTwo.new(2)
+        self.sub_table = SubTableTwo.new(2)
         'SubTableTwo'
       end
     end

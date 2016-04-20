@@ -11,19 +11,19 @@ class Discovery < Table
     private
 
     def tracks
-      self.sub_element = Tracks.new
+      self.sub_table = Tracks.new
       'Tracks/Spoor'
       # @tracks ||= "Tracks/Spoor<br />#{Tracks.new}"
     end
 
     def remains
-      self.sub_element = Remains.new
+      self.sub_table = Remains.new
       'Remains/Debris'
       # @remains ||= "Remains/Debris<br />#{Remains.new}"
     end
 
     def stash
-      self.sub_element = Stash.new
+      self.sub_table = Stash.new
       'Stash/Cache'
       # @stash ||= "Stash/Cache<br />#{Stash.new}"
     end
