@@ -31,7 +31,7 @@ class Creature < Table
       end
 
       def beast_ability
-        @beast_ability ||= "#{Beast.new.elements.last} + Ability"
+        @beast_ability ||= "#{Beast.new.elements.last} + #{Details::Ability.new.elements.last}"
       end
 
       def beast_feature
