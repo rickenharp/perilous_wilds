@@ -21,6 +21,7 @@ class Creature < Table
     end
 
     def water_going
+      self.sub_table = WaterGoing.new
       'Water-Going'
     end
 
