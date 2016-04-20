@@ -11,10 +11,12 @@ class Creature < Table
     private
 
     def common
+      self.sub_table = Common.new
       'Common'
     end
 
     def uncommon
+      self.sub_table = Uncommon.new
       'Uncommon'
     end
 
