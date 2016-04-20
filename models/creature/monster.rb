@@ -16,6 +16,7 @@ class Creature < Table
     end
 
     def rare
+      self.sub_table = Rare.new
       'Rare'
     end
 
