@@ -23,6 +23,7 @@ class Creature < Table
   end
 
   def monster
+    self.sub_table = Monster.new
     'Monster'
   end
 end
