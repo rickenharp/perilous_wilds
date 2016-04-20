@@ -2,7 +2,6 @@ require 'awesome_print'
 
 class Table
   attr_accessor :sub_table
-  attr_accessor :details
 
   def initialize(number = nil)
     @details = {}
@@ -14,6 +13,15 @@ class Table
 
   def to_s
     @value
+  end
+
+  def details
+    return @details unless sub_table
+    @details.merge(sub_table.details)
+  end
+
+  def add_detail(name, detail)
+    @details[name] = detail
   end
 
   def elements

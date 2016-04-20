@@ -9,5 +9,10 @@ class Discovery < Table
         (12..12) => 'presence'
       ).freeze
     end
+
+    def initialize(*)
+      super
+      add_detail('Alignment', Details::Alignment.new)
+    end
   end
 end

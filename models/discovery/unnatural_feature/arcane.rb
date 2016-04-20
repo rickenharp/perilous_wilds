@@ -9,5 +9,10 @@ class Discovery < Table
         (11..12) => 'source/repository'
       ).freeze
     end
+
+    def initialize(*)
+      super
+      add_detail('Alignment', Details::Alignment.new)
+    end
   end
 end
