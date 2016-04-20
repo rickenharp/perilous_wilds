@@ -11,6 +11,7 @@ class Creature < Table
     private
 
     def earthbound
+      self.sub_table = Earthbound.new
       'Earthbound'
     end
 
