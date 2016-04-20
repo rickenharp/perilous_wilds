@@ -139,9 +139,8 @@ GEM
     thor (0.19.1)
     thread_safe (0.3.5)
     tilt (2.0.2)
-    unicorn (5.0.1)
+    unicorn (5.1.0)
       kgio (~> 2.6)
-      rack
       raindrops (~> 0.7)
     virtus (1.0.5)
       axiom-types (~> 0.1)
