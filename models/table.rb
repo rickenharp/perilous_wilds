@@ -1,5 +1,3 @@
-require 'awesome_print'
-
 class Table
   attr_accessor :sub_table
 
