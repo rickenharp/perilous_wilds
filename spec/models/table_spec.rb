@@ -22,6 +22,20 @@ RSpec.describe Table do
       test_table.add_detail('Foo', 'Bar')
       expect(test_table.details).to eq('Foo' => 'Bar')
     end
+
+    it 'calls the add_details callback' do
+      class HookTable < Table
+        OPTIONS = RangedHash.new(
+          %w(black white).freeze
+        )
+
+        def add_details
+          raise 'HOOKED!'
+        end
+      end
+
+      expect { HookTable.new }.to raise_error('HOOKED!')
+    end
   end
 
   describe 'sub-tables' do

@@ -9,8 +9,7 @@ class Discovery < Table
         (11..12) => 'source/repository'
       ).freeze
 
-      def initialize(*)
-        super
+      def add_details
         add_detail('Alignment', Details::Alignment.new)
         add_detail('Magic Type', Details::MagicType.new)
       end
