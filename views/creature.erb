@@ -1,0 +1,13 @@
+<h1>Creature</h1>
+<p>
+<%= @creature.elements.join(' &rarr; ') %>
+</p>
+
+<% @creature.details.each do |name, value| %>
+<p>
+  <b><%= name %>:</b> <i><%= value %></i>
+</p>
+<% end %>
+
+<a href="/creature">reload</a><br>
+<a href="/welcome">back</a>
