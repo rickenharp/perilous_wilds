@@ -12,19 +12,16 @@ class Discovery < Table
 
     def arcane
       self.sub_table = Arcane.new
-      details['Alignment'] = Details::Alignment.new
       'Arcane'
     end
 
     def planar
       self.sub_table = Planar.new
-      details['Alignment'] = Details::Alignment.new
       'Planar'
     end
 
     def divine
       self.sub_table = Divine.new
-      details['Alignment'] = Details::Alignment.new
       'Divine'
     end
   end

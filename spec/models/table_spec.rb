@@ -17,6 +17,11 @@ RSpec.describe Table do
     it 'elements returns itself' do
       expect(subject.elements).to eq [subject]
     end
+
+    it '#add_detail' do
+      test_table.add_detail('Foo', 'Bar')
+      expect(test_table.details).to eq('Foo' => 'Bar')
+    end
   end
 
   describe 'sub-tables' do
@@ -51,6 +56,11 @@ RSpec.describe Table do
       OPTIONS = RangedHash.new(
         %w(three four)
       )
+
+      def initialize(*)
+        super
+        details[:foo] = 'bar'
+      end
     end
 
     it 'elements returns itself and all subtables' do
@@ -58,6 +68,10 @@ RSpec.describe Table do
       expect(elements.size).to eq 2
       expect(elements.map(&:to_s)).to eq %w(SubTableTwo four)
       expect(elements.last).to be_a SubTableTwo
+    end
+
+    it 'details merge details from subtables' do
+      expect(test_table.details).to eq(foo: 'bar')
     end
   end
 end
