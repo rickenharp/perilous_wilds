@@ -21,7 +21,9 @@ module Details
 
     def roll_twice
       new_range = Range.new(1, OPTIONS.max - 1)
-      "#{Oddity.new(rand(new_range))} & #{Oddity.new(rand(new_range))}"
+      @both ||= Array.new(2) { Oddity.new(rand(new_range)) }
+      self.sub_table = @both.collect(&:sub_table).uniq.first
+      @both.join(' & ')
     end
   end
 end

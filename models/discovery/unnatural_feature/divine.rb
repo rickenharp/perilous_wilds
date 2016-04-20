@@ -8,12 +8,11 @@ class Discovery < Table
         (10..11) => 'watched place',
         (12..12) => 'presence'
       ).freeze
-    end
 
-    def initialize(*)
-      super
-      add_detail('Alignment', Details::Alignment.new)
-      add_detail('Aspect', Details::Aspect.new)
+      def add_details
+        add_detail('Alignment', Details::Alignment.new)
+        add_detail('Aspect', Details::Aspect.new)
+      end
     end
   end
 end

@@ -8,8 +8,7 @@ class Discovery < Table
         (11..12) => 'outpost'
       ).freeze
 
-      def initialize(*)
-        super
+      def add_details
         add_detail('Alignment', Details::Alignment.new)
         add_detail('Element', Details::Element.new)
       end
