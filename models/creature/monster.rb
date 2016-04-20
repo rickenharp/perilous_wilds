@@ -28,6 +28,7 @@ class Creature < Table
     def add_details
       add_detail('Activity', Details::Activity.new)
       add_detail('Alignment', Details::Alignment.new)
+      add_detail('Disposition', Details::Disposition.new)
     end
   end
 end
