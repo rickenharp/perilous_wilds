@@ -21,6 +21,7 @@ class Creature < Table
     end
 
     def hybrid
+      self.sub_table = Hybrid.new
       'Hybrid'
     end
 
