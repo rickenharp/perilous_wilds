@@ -1,7 +1,7 @@
-require 'models/random_element'
+require 'models/table'
 
-class Region < RandomElement
-  class Terrain < RandomElement
+class Region < Table
+  class Terrain < Table
     OPTIONS = RangedHash.new(
       %w(
         Bay Bluffs Bog Cliffs Desert Downs Dunes Expanse Fells Fen Flats

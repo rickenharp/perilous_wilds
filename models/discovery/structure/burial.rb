@@ -1,6 +1,6 @@
-class Discovery < RandomElement
-  class Structure < RandomElement
-    class Burial < RandomElement
+class Discovery < Table
+  class Structure < Table
+    class Burial < Table
       OPTIONS = RangedHash.new(
         (1..2) => 'grave marker/barrow',
         (3..4) => 'graveyard/necropolis',

@@ -1,6 +1,6 @@
-class Discovery < RandomElement
-  class NaturalFeature < RandomElement
-    class Lair < RandomElement
+class Discovery < Table
+  class NaturalFeature < Table
+    class Lair < Table
       OPTIONS = RangedHash.new(
         (1..3) => 'burrow',
         (4..7) => 'cave/tunnel',
@@ -12,7 +12,7 @@ class Discovery < RandomElement
       private
 
       def ruins
-        self.sub_element = Discovery::Structure::Ruin.new
+        self.sub_table = Discovery::Structure::Ruin.new
         'ruins'
       end
     end

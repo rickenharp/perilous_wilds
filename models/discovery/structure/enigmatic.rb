@@ -1,6 +1,6 @@
-class Discovery < RandomElement
-  class Structure < RandomElement
-    class Enigmatic < RandomElement
+class Discovery < Table
+  class Structure < Table
+    class Enigmatic < Table
       OPTIONS = RangedHash.new(
         (1..4) => 'earthworks',
         (5..8) => 'megalith',

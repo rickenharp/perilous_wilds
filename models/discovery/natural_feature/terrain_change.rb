@@ -1,6 +1,6 @@
-class Discovery < RandomElement
-  class NaturalFeature < RandomElement
-    class TerrainChange < RandomElement
+class Discovery < Table
+  class NaturalFeature < Table
+    class TerrainChange < Table
       OPTIONS = RangedHash.new(
         (1..4) => 'limited area of another TERRAIN type', # TODO: Terrain
         (5..6) => 'crevice/hole/pit/cave',
