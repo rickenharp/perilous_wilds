@@ -15,6 +15,7 @@ group :development do
   gem 'awesome_print'
   gem 'pry'
   gem 'rubycritic'
+  gem 'guard'
 end
 
 group :test do
