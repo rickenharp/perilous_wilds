@@ -54,6 +54,11 @@ GEM
       pry (>= 0.9.12)
       shellany (~> 0.0)
       thor (>= 0.18.1)
+    guard-compat (1.2.1)
+    guard-rspec (4.6.5)
+      guard (~> 2.1)
+      guard-compat (~> 1.1)
+      rspec (>= 2.99.0, < 4.0)
     i18n (0.7.0)
     ice_nine (0.11.2)
     kgio (2.10.0)
@@ -156,6 +161,7 @@ DEPENDENCIES
   capistrano-rbenv
   capybara
   guard
+  guard-rspec
   pry
   roda
   rspec
