@@ -16,6 +16,7 @@ class Creature < Table
     end
 
     def airborne
+      self.sub_table = Airborne.new
       'Airborne'
     end
 
