@@ -13,6 +13,7 @@ class Discovery < Table
     def initialize(*)
       super
       add_detail('Alignment', Details::Alignment.new)
+      add_detail('Aspect', Details::Aspect.new)
     end
   end
 end
