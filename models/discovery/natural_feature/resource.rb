@@ -1,6 +1,6 @@
-class Discovery < RandomElement
-  class NaturalFeature < RandomElement
-    class Resource < RandomElement
+class Discovery < Table
+  class NaturalFeature < Table
+    class Resource < Table
       OPTIONS = RangedHash.new(
         (1..4) => 'game/fruit/vegetable',
         (5..6) => 'herb/spice/dye source',

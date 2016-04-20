@@ -1,5 +1,5 @@
 module Details
-  class Alignment < RandomElement
+  class Alignment < Table
     OPTIONS = RangedHash.new(
       (1..2) => 'Chaotic',
       (3..4) => 'Evil',

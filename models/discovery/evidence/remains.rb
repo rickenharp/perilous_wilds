@@ -1,6 +1,6 @@
-class Discovery < RandomElement
-  class Evidence < RandomElement
-    class Remains < RandomElement
+class Discovery < Table
+  class Evidence < Table
+    class Remains < Table
       OPTIONS = RangedHash.new(
         (1..4) => 'bones',
         (5..7) => 'corpse/carcass',

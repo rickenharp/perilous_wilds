@@ -1,6 +1,6 @@
 require 'awesome_print'
 
-class RandomElement
+class Table
   attr_accessor :sub_element
   attr_accessor :details
 

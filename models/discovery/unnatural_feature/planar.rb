@@ -1,6 +1,6 @@
-class Discovery < RandomElement
-  class UnnaturalFeature < RandomElement
-    class Planar < RandomElement
+class Discovery < Table
+  class UnnaturalFeature < Table
+    class Planar < Table
       OPTIONS = RangedHash.new(
         (1..4) => 'distortion/warp',
         (5..8) => 'portal/gate',

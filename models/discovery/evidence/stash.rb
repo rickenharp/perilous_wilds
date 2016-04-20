@@ -1,6 +1,6 @@
-class Discovery < RandomElement
-  class Evidence < RandomElement
-    class Stash < RandomElement
+class Discovery < Table
+  class Evidence < Table
+    class Stash < Table
       OPTIONS = RangedHash.new(
         (1..3) => 'trinkets/coins',
         (4..5) => 'tools/weapons/armor',

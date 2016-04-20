@@ -1,4 +1,4 @@
-class Discovery < RandomElement
+class Discovery < Table
   OPTIONS = RangedHash.new({
     (1..1) => '<%= unnatural_feature %>',
     (2..4) => '<%= natural_feature %>',

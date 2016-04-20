@@ -1,7 +1,7 @@
-require 'models/random_element'
+require 'models/table'
 
-class Discovery < RandomElement
-  class UnnaturalFeature < RandomElement
+class Discovery < Table
+  class UnnaturalFeature < Table
     OPTIONS = RangedHash.new(
       (1..9) => '<%= arcane %>',
       (10..11) => '<%= planar %>',

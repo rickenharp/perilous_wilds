@@ -1,6 +1,6 @@
-class Discovery < RandomElement
-  class NaturalFeature < RandomElement
-    class WaterFeature < RandomElement
+class Discovery < Table
+  class NaturalFeature < Table
+    class WaterFeature < Table
       OPTIONS = RangedHash.new(
         (1..1) => 'spring/hotspring',
         (2..2) => 'waterfall/geyser',

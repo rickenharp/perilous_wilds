@@ -1,7 +1,7 @@
-require 'models/random_element'
+require 'models/table'
 
-class Discovery < RandomElement
-  class Evidence < RandomElement
+class Discovery < Table
+  class Evidence < Table
     OPTIONS = RangedHash.new(
       (1..6) => '<%= tracks %>',
       (7..10) => '<%= remains %>',
