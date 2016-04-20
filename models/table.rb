@@ -1,7 +1,7 @@
 require 'awesome_print'
 
 class Table
-  attr_accessor :sub_element
+  attr_accessor :sub_table
   attr_accessor :details
 
   def initialize(number = nil)
@@ -17,8 +17,8 @@ class Table
   end
 
   def elements
-    return [self] unless sub_element
-    [self] + sub_element.elements
+    return [self] unless sub_table
+    [self] + sub_table.elements
   end
 
   private

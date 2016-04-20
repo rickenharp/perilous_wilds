@@ -14,25 +14,25 @@ class Discovery < Table
     private
 
     def enigmatic
-      self.sub_element = Enigmatic.new
+      self.sub_table = Enigmatic.new
       'Enigmatic'
       # @enigmatic ||= "Enigmatic<br />#{Enigmatic.new}"
     end
 
     def infrastructure
-      self.sub_element = Infrastructure.new
+      self.sub_table = Infrastructure.new
       'Infrastructure'
       # @infrastructure ||= "Infrastructure<br />#{Infrastructure.new}"
     end
 
     def dwelling
-      self.sub_element = Dwelling.new
+      self.sub_table = Dwelling.new
       'Dwelling'
       # @dwelling ||= "Dwelling<br />#{Dwelling.new}"
     end
 
     def burial
-      self.sub_element = Burial.new
+      self.sub_table = Burial.new
       'Burial/Religious'
       # @burial ||= "Burial/Religious<br />#{Burial.new}"
     end
@@ -42,7 +42,7 @@ class Discovery < Table
     end
 
     def ruin
-      self.sub_element = Ruin.new
+      self.sub_table = Ruin.new
       'Ruin'
       # @ruin ||= "Ruin<br />#{Ruin.new}"
     end
