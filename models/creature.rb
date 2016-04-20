@@ -18,6 +18,7 @@ class Creature < Table
   end
 
   def humanoid
+    self.sub_table = Humanoid.new
     'Humanoid'
   end
 
