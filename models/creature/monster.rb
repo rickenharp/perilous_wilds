@@ -21,5 +21,10 @@ class Creature < Table
     def legendary
       'Legendary'
     end
+
+    def add_details
+      add_detail('Activity', Details::Activity.new)
+      add_detail('Alignment', Details::Alignment.new)
+    end
   end
 end

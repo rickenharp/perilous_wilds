@@ -21,5 +21,9 @@ class Creature < Table
     def water_going
       'Water-Going'
     end
+
+    def add_details
+      add_detail('Activity', Details::Activity.new)
+    end
   end
 end
