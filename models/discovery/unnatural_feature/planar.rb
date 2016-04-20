@@ -7,11 +7,12 @@ class Discovery < Table
         (9..10) => 'rift/tear',
         (11..12) => 'outpost'
       ).freeze
-    end
 
-    def initialize(*)
-      super
-      add_detail('Alignment', Details::Alignment.new)
+      def initialize(*)
+        super
+        add_detail('Alignment', Details::Alignment.new)
+        add_detail('Element', Details::Element.new)
+      end
     end
   end
 end
