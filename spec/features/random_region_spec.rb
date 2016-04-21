@@ -9,9 +9,8 @@ RSpec.describe 'The app', type: :feature do
   end
 
   it 'returns a random region' do
-    Kernel.srand(1337)
-
-    visit '/region?seed=1337'
+    seed = Base58.encode(1337)
+    visit "/region?seed=#{seed}"
 
     expect(page).to have_content('Glittering Steppe of (the) Snake')
   end

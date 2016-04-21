@@ -9,7 +9,8 @@ RSpec.describe 'The app', type: :feature do
   end
 
   it 'returns a random creature' do
-    visit '/creature?seed=1337'
+    seed = Base58.encode(1337)
+    visit "/creature?seed=#{seed}"
 
     expect(page).to have_content('Humanoid')
     expect(page).to have_content('Uncommon')

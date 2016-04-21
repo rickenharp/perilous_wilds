@@ -2,7 +2,8 @@ require 'roda_helper'
 
 RSpec.describe 'The app', type: :feature do
   it ' a random discovery' do
-    visit '/discovery?seed=1338'
+    seed = Base58.encode(1338)
+    visit "/discovery?seed=#{seed}"
 
     expect(page).to have_content('Unnatural Feature')
     expect(page).to have_content('Arcane')
