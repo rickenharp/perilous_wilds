@@ -7,6 +7,3 @@ before_script:
 rspec:
   script:
     - bundle exec rspec
-  artifacts:
-    paths:
-      - coverage/
