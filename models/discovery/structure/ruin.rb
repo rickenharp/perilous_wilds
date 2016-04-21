@@ -15,6 +15,7 @@ class Discovery < Table
         creature = Creature.new(d(4, +4))
         add_detail('Creature responsible', creature.elements.join(' &rarr; '))
         add_detail('Age', Details::Age.new(d(8, +4)))
+        add_detail('Ruination', Details::Ruination.new)
       end
 
       def ruined_infrastructure
