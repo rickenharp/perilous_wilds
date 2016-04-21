@@ -12,4 +12,9 @@ RSpec.describe Discovery::Structure::Burial do
     expect(subject.details).to include('Alignment')
     expect(subject.details['Alignment']).to be_a(Details::Alignment)
   end
+
+  it 'has Aspect detail' do
+    expect(subject.details).to include('Aspect')
+    expect(subject.details['Aspect']).to be_a(Details::Aspect)
+  end
 end
