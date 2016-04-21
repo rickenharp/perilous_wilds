@@ -7,4 +7,9 @@ RSpec.describe Discovery::Structure::Enigmatic do
     expect(subject.details).to include('Age')
     expect(subject.details['Age']).to be_a(Details::Age)
   end
+
+  it 'has Size detail' do
+    expect(subject.details).to include('Size')
+    expect(subject.details['Size']).to be_a(Details::Size)
+  end
 end
