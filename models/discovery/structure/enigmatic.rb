@@ -10,6 +10,10 @@ class Discovery < Table
 
       private
 
+      def add_details
+        add_detail('Age', Details::Age.new(d(8, +4)))
+      end
+
       def oddity
         self.sub_table = Details::Oddity.new
         'Oddity'
