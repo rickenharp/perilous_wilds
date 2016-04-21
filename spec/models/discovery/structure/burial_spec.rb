@@ -7,4 +7,9 @@ RSpec.describe Discovery::Structure::Burial do
     expect(subject.details).to include('Creature responsible')
     expect(subject.details['Creature responsible']).to_not be_nil
   end
+
+  it 'has Alignment detail' do
+    expect(subject.details).to include('Alignment')
+    expect(subject.details['Alignment']).to be_a(Details::Alignment)
+  end
 end
