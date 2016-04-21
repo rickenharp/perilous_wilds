@@ -12,6 +12,9 @@ class PerilousWilds < Roda
   route do |r|
     r.assets unless ENV['RACK_ENV'] == 'production'
 
+    @seed = r.params['seed'] || Random.new_seed
+    Kernel.srand(@seed.to_i)
+
     r.root do
       r.redirect '/welcome'
     end
