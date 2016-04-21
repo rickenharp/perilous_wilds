@@ -15,6 +15,11 @@ class Discovery < Table
         self.sub_table = Discovery::Structure::Ruin.new
         'ruins'
       end
+
+      def add_details
+        creature = Creature.new
+        add_detail('Creature responsible', creature.elements.join(' &rarr; '))
+      end
     end
   end
 end
