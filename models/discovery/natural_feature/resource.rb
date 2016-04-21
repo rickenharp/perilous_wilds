@@ -10,6 +10,7 @@ class Discovery < Table
       ).freeze
 
       def add_details
+        add_detail('Size', Details::Size.new)
         add_detail('Visibility', Details::Visibility.new)
       end
     end
