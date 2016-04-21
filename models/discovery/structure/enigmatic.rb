@@ -13,6 +13,7 @@ class Discovery < Table
       def add_details
         add_detail('Age', Details::Age.new(d(8, +4)))
         add_detail('Size', Details::Size.new(d(8, +4)))
+        add_detail('Visibility', Details::Visibility.new)
       end
 
       def oddity

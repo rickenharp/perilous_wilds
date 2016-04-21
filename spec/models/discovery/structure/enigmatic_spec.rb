@@ -12,4 +12,9 @@ RSpec.describe Discovery::Structure::Enigmatic do
     expect(subject.details).to include('Size')
     expect(subject.details['Size']).to be_a(Details::Size)
   end
+
+  it 'has Visibility detail' do
+    expect(subject.details).to include('Visibility')
+    expect(subject.details['Visibility']).to be_a(Details::Visibility)
+  end
 end
