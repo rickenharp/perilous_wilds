@@ -12,4 +12,9 @@ RSpec.describe Discovery::Structure::Ruin do
     expect(subject.details).to include('Age')
     expect(subject.details['Age']).to be_a(Details::Age)
   end
+
+  it 'has Ruination detail' do
+    expect(subject.details).to include('Ruination')
+    expect(subject.details['Ruination']).to be_a(Details::Ruination)
+  end
 end
