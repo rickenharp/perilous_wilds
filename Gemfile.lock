@@ -34,6 +34,7 @@ GEM
     descendants_tracker (0.0.4)
       thread_safe (~> 0.3, >= 0.3.1)
     diff-lcs (1.2.5)
+    docile (1.1.5)
     equalizer (0.0.11)
     erubis (2.7.0)
     ffi (1.9.10)
@@ -61,6 +62,7 @@ GEM
       rspec (>= 2.99.0, < 4.0)
     i18n (0.7.0)
     ice_nine (0.11.2)
+    json (1.8.3)
     kgio (2.10.0)
     launchy (2.4.3)
       addressable (~> 2.3)
@@ -132,6 +134,11 @@ GEM
     shellany (0.0.1)
     shotgun (0.9.1)
       rack (>= 1.0)
+    simplecov (0.11.2)
+      docile (~> 1.1.0)
+      json (~> 1.8)
+      simplecov-html (~> 0.10.0)
+    simplecov-html (0.10.0)
     slop (3.6.0)
     sshkit (1.9.0)
       net-scp (>= 1.1.2)
@@ -167,6 +174,7 @@ DEPENDENCIES
   rubycritic
   sass
   shotgun
+  simplecov
   tilt
   unicorn
 
