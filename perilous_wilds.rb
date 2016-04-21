@@ -47,5 +47,10 @@ class PerilousWilds < Roda
       @creature = Creature.new
       view(:creature)
     end
+
+    r.is 'steading' do
+      @steading = Steading.new
+      view(:steading)
+    end
   end
 end

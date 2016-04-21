@@ -1,0 +1,14 @@
+<h1>Random Steading</h1>
+<p>
+<%= @steading.elements.join(' &rarr; ') %>
+</p>
+
+<% @steading.details.each do |name, value| %>
+<p>
+  <b><%= name %>:</b> <i><%= value %></i>
+</p>
+<% end %>
+
+<a href="/steading?seed=<%= @seed %>">Share</a><br>
+<a href="/steading">reload</a><br>
+<a href="/welcome">back</a>
