@@ -17,4 +17,9 @@ RSpec.describe Discovery::Structure::Ruin do
     expect(subject.details).to include('Ruination')
     expect(subject.details['Ruination']).to be_a(Details::Ruination)
   end
+
+  it 'has Visibility detail' do
+    expect(subject.details).to include('Visibility')
+    expect(subject.details['Visibility']).to be_a(Details::Visibility)
+  end
 end
