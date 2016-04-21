@@ -8,6 +8,11 @@ class Discovery < Table
         (11..11) => 'mine/quarry',
         (12..12) => 'aqueduct/canal/portal'
       ).freeze
+
+      def add_details
+        creature = Creature.new(d(4, +4))
+        add_detail('Creature responsible', creature.elements.join(' &rarr; '))
+      end
     end
   end
 end
