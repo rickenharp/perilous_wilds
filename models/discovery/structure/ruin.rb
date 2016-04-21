@@ -11,6 +11,11 @@ class Discovery < Table
 
       private
 
+      def add_details
+        creature = Creature.new(d(4, +4))
+        add_detail('Creature responsible', creature.elements.join(' &rarr; '))
+      end
+
       def ruined_infrastructure
         @ri ||= Discovery::Structure::Infrastructure.new(d(6, +6))
       end
