@@ -9,9 +9,8 @@ RSpec.describe 'The app', type: :feature do
   end
 
   it 'returns a random item' do
-    Kernel.srand(1337)
-
-    visit '/item?seed=1337'
+    seed = Base58.encode(1337)
+    visit "/item?seed=#{seed}"
 
     expect(page).to have_content('armor/shield/helm')
   end

@@ -3,6 +3,7 @@ $LOAD_PATH << File.expand_path('.')
 require 'roda'
 require 'tilt/erb'
 require 'models'
+require 'base58'
 
 class PerilousWilds < Roda
   plugin :render
@@ -12,8 +13,12 @@ class PerilousWilds < Roda
   route do |r|
     r.assets unless ENV['RACK_ENV'] == 'production'
 
-    @seed = r.params['seed'] || Random.new_seed
-    Kernel.srand(@seed.to_i)
+    if r.params['seed']
+      @seed = Base58.decode(r.params['seed'])
+    else
+      @seed = Random.new_seed
+    end
+    Kernel.srand(@seed)
 
     r.root do
       r.redirect '/welcome'

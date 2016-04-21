@@ -9,7 +9,8 @@ RSpec.describe 'The app', type: :feature do
   end
 
   it 'returns a random place' do
-    visit '/place?seed=1337'
+    seed = Base58.encode(1337)
+    visit "/place?seed=#{seed}"
 
     expect(page).to have_content('The Jagged Spirit')
   end

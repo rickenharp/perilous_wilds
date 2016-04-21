@@ -5,6 +5,7 @@ gem 'roda'
 gem 'tilt'
 gem 'sass'
 gem 'unicorn'
+gem 'base58'
 
 group :development do
   gem 'shotgun'
