@@ -1,6 +1,6 @@
 require 'roda_helper'
 
-RSpec.describe "The app", type: :feature do
+RSpec.describe 'The app', type: :feature do
   it 'links to item' do
     visit '/'
     click_on 'Random item'

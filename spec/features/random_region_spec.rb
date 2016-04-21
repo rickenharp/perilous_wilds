@@ -1,6 +1,6 @@
 require 'roda_helper'
 
-RSpec.describe "The app", type: :feature do
+RSpec.describe 'The app', type: :feature do
   it 'links to region' do
     visit '/'
     click_on 'Name a region'
