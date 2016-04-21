@@ -32,7 +32,8 @@ class Discovery < Table
       end
 
       def ruined_steading
-        'Steading' # TODO: Steading
+        self.sub_table = Steading.new
+        'Steading'
       end
 
       def ruined_dungeon
