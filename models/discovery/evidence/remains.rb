@@ -12,6 +12,7 @@ class Discovery < Table
 
       def add_details
         add_detail('Age', Details::Age.new)
+        add_detail('Visibility', Details::Visibility.new)
       end
     end
   end
