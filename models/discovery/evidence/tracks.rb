@@ -8,11 +8,11 @@ class Discovery < Table
         (9..10) => 'signs of violence',
         (11..12) => 'trails of blood/other'
       ).freeze
-    end
 
-    def add_details
-      creature = Creature.new
-      add_detail('Creature responsible', creature.elements.join(' &rarr; '))
+      def add_details
+        creature = Creature.new
+        add_detail('Creature responsible', creature.elements.join(' &rarr; '))
+      end
     end
   end
 end
