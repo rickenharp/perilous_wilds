@@ -16,6 +16,11 @@
 # users commonly want.
 #
 # See http://rubydoc.info/gems/rspec-core/RSpec/Core/Configuration
+require 'simplecov'
+SimpleCov.start do
+  add_filter '/spec/'
+end
+
 Dir[File.dirname(__FILE__) + '/models/shared_examples/**/*.rb'].each do |f|
   require f
 end

@@ -2,3 +2,4 @@
 public/assets/
 spec/examples.txt
 tmp/
+coverage/
