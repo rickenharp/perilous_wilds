@@ -9,5 +9,10 @@ class Discovery < Table
         (11..12) => 'trails of blood/other'
       ).freeze
     end
+
+    def add_details
+      creature = Creature.new
+      add_detail('Creature responsible', creature.elements.join(' &rarr; '))
+    end
   end
 end
