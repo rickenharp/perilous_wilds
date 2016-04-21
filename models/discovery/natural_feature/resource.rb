@@ -8,6 +8,10 @@ class Discovery < Table
         (10..11) => 'ore (copper, iron, etc.)',
         (12..12) => 'precious metal/gems'
       ).freeze
+
+      def add_details
+        add_detail('Visibility', Details::Visibility.new)
+      end
     end
   end
 end
