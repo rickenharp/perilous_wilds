@@ -13,6 +13,7 @@ class Discovery < Table
       def add_details
         creature = Creature.new(d(4, +4))
         add_detail('Creature responsible', creature.elements.join(' &rarr; '))
+        add_detail('Alignment', Details::Alignment.new)
       end
     end
   end
