@@ -9,6 +9,10 @@ class Discovery < Table
         (11..11) => 'lost supplies/cargo',
         (12..12) => 'tools/weapons/armor'
       ).freeze
+
+      def add_details
+        add_detail('Age', Details::Age.new)
+      end
     end
   end
 end
