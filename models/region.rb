@@ -1,8 +1,7 @@
-require 'models/table'
-require 'models/region/adjective'
-require 'models/region/noun'
-require 'models/region/terrain'
-require 'tilt/erb'
+require 'region/adjective'
+require 'region/noun'
+require 'region/terrain'
+
 
 class Region < Table
   OPTIONS = RangedHash.new(

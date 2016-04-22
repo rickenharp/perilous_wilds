@@ -1,3 +1,6 @@
+require 'details/alignment'
+require 'details/magic_type'
+
 class Discovery < Table
   class UnnaturalFeature < Table
     class Arcane < Table

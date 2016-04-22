@@ -1,3 +1,12 @@
+require 'discovery/structure/infrastructure'
+require 'discovery/structure/dwelling'
+require 'discovery/structure/burial'
+require 'creature'
+require 'steading'
+require 'details/age'
+require 'details/ruination'
+require 'details/visibility'
+
 class Discovery < Table
   class Structure < Table
     class Ruin < Table

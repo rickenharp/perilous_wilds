@@ -1,3 +1,6 @@
+require 'details/alignment'
+require 'details/aspect'
+
 class Discovery < Table
   class UnnaturalFeature < Table
     class Divine < Table

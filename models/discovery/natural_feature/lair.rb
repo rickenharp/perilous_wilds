@@ -1,3 +1,7 @@
+require 'discovery/structure/ruin'
+require 'creature'
+require 'details/visibility'
+
 class Discovery < Table
   class NaturalFeature < Table
     class Lair < Table

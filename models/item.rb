@@ -1,3 +1,6 @@
+require 'item/utility'
+require 'item/art'
+
 class Item < Table
   OPTIONS = RangedHash.new({
     (1..8) => '<%= utility_item %>',

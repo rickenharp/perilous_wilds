@@ -1,4 +1,11 @@
-require 'models/table'
+require 'creature/monster/unusual'
+require 'creature/monster/rare'
+require 'creature/monster/legendary'
+require 'details/activity'
+require 'details/alignment'
+require 'details/disposition'
+require 'details/number_appearing'
+require 'details/size'
 
 class Creature < Table
   class Monster < Table

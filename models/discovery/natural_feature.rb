@@ -1,4 +1,9 @@
-require 'models/table'
+require 'discovery/natural_feature/lair'
+require 'discovery/natural_feature/obstacle'
+require 'discovery/natural_feature/terrain_change'
+require 'discovery/natural_feature/water_feature'
+require 'discovery/natural_feature/landmark'
+require 'discovery/natural_feature/resource'
 
 class Discovery < Table
   class NaturalFeature < Table
@@ -16,37 +21,31 @@ class Discovery < Table
     def lair
       self.sub_table = Lair.new
       'Lair'
-      # @lair ||= "Lair<br />#{Lair.new}"
     end
 
     def obstacle
       self.sub_table = Obstacle.new
       'Obstacle'
-      # @obstacle ||= "Obstacle<br />#{Obstacle.new}"
     end
 
     def terrain_change
       self.sub_table = TerrainChange.new
       'Terrain Change'
-      # @terrain_change ||= "Terrain Change<br />#{TerrainChange.new}"
     end
 
     def water_feature
       self.sub_table = WaterFeature.new
       'Water Feature'
-      # @water_feature ||= "Water Feature<br />#{WaterFeature.new}"
     end
 
     def landmark
       self.sub_table = Landmark.new
       'Landmark'
-      # @landmark ||= "Landmark<br />#{Landmark.new}"
     end
 
     def resource
       self.sub_table = Resource.new
       'Resource'
-      # @resource ||= "Resource<br />#{Resource.new}"
     end
   end
 end

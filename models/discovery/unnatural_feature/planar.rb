@@ -1,3 +1,6 @@
+require 'details/alignment'
+require 'details/element'
+
 class Discovery < Table
   class UnnaturalFeature < Table
     class Planar < Table

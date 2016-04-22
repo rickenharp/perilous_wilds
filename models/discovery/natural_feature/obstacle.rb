@@ -1,3 +1,5 @@
+require 'details/oddity'
+
 class Discovery < Table
   class NaturalFeature < Table
     class Obstacle < Table

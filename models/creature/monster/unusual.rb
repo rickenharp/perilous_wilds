@@ -1,4 +1,7 @@
-require 'models/table'
+require 'creature/humanoid'
+require 'creature/beast'
+require 'details/ability'
+require 'details/feature'
 
 class Creature < Table
   class Monster < Table

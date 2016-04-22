@@ -1,3 +1,8 @@
+require 'details/age'
+require 'details/size'
+require 'details/visibility'
+require 'details/oddity'
+
 class Discovery < Table
   class Structure < Table
     class Enigmatic < Table

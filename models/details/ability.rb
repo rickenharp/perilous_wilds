@@ -1,3 +1,7 @@
+require 'details/magic_type'
+require 'details/element'
+require 'details/ability'
+
 module Details
   class Ability < Table
     OPTIONS = RangedHash.new(

@@ -1,4 +1,6 @@
-require 'models/table'
+require 'discovery/unnatural_feature/arcane'
+require 'discovery/unnatural_feature/planar'
+require 'discovery/unnatural_feature/divine'
 
 class Discovery < Table
   class UnnaturalFeature < Table

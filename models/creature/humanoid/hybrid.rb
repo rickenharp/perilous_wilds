@@ -1,4 +1,4 @@
-require 'models/table'
+require 'creature/beast'
 
 class Creature < Table
   class Humanoid < Table

@@ -1,3 +1,6 @@
+require 'details/age'
+require 'creature'
+
 class Discovery < Table
   class Evidence < Table
     class Tracks < Table

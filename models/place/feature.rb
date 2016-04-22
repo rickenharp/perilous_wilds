@@ -1,5 +1,3 @@
-require 'models/table'
-
 class Place < Table
   class Feature < Table
     OPTIONS = RangedHash.new(
