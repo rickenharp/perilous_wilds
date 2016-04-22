@@ -1,5 +1,6 @@
-require 'models/table'
-require 'tilt/erb'
+require 'place/noun'
+require 'place/feature'
+require 'place/adjective'
 
 class Place < Table
   OPTIONS = RangedHash.new(

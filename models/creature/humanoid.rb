@@ -1,4 +1,10 @@
-require 'models/table'
+require 'creature/humanoid/common'
+require 'creature/humanoid/uncommon'
+require 'creature/humanoid/hybrid'
+require 'details/activity'
+require 'details/alignment'
+require 'details/disposition'
+require 'details/number_appearing'
 
 class Creature < Table
   class Humanoid < Table

@@ -1,5 +1,3 @@
-require 'models/table'
-
 class Creature < Table
   class Beast < Table
     class WaterGoing < Table

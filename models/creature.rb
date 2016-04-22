@@ -1,3 +1,11 @@
+require 'creature/beast'
+require 'creature/humanoid'
+require 'creature/monster'
+require 'details/activity'
+require 'details/alignment'
+require 'details/disposition'
+require 'details/number_appearing'
+
 class Creature < Table
   OPTIONS = RangedHash.new({
     (1..4) => '<%= beast %>',

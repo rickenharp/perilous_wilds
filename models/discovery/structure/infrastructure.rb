@@ -1,3 +1,5 @@
+require 'creature'
+
 class Discovery < Table
   class Structure < Table
     class Infrastructure < Table

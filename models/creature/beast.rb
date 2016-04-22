@@ -1,4 +1,10 @@
-require 'models/table'
+require 'creature/beast/earthbound'
+require 'creature/beast/airborne'
+require 'creature/beast/water_going'
+require 'details/activity'
+require 'details/disposition'
+require 'details/number_appearing'
+require 'details/size'
 
 class Creature < Table
   class Beast < Table

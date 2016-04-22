@@ -1,3 +1,7 @@
+require 'creature'
+require 'details/alignment'
+require 'details/aspect'
+
 class Discovery < Table
   class Structure < Table
     class Burial < Table

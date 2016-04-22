@@ -1,4 +1,6 @@
-require 'models/table'
+require 'discovery/evidence/tracks'
+require 'discovery/evidence/remains'
+require 'discovery/evidence/stash'
 
 class Discovery < Table
   class Evidence < Table
@@ -13,19 +15,16 @@ class Discovery < Table
     def tracks
       self.sub_table = Tracks.new
       'Tracks/Spoor'
-      # @tracks ||= "Tracks/Spoor<br />#{Tracks.new}"
     end
 
     def remains
       self.sub_table = Remains.new
       'Remains/Debris'
-      # @remains ||= "Remains/Debris<br />#{Remains.new}"
     end
 
     def stash
       self.sub_table = Stash.new
       'Stash/Cache'
-      # @stash ||= "Stash/Cache<br />#{Stash.new}"
     end
   end
 end

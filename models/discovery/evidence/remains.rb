@@ -1,3 +1,6 @@
+require 'details/age'
+require 'details/visibility'
+
 class Discovery < Table
   class Evidence < Table
     class Remains < Table

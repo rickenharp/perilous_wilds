@@ -1,3 +1,6 @@
+require 'details/size'
+require 'details/visibility'
+
 class Discovery < Table
   class NaturalFeature < Table
     class Resource < Table

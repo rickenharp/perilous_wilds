@@ -1,3 +1,9 @@
+require 'discovery/unnatural_feature'
+require 'discovery/natural_feature'
+require 'discovery/evidence'
+require 'discovery/structure'
+require 'creature'
+
 class Discovery < Table
   OPTIONS = RangedHash.new({
     (1..1) => '<%= unnatural_feature %>',

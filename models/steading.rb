@@ -1,3 +1,5 @@
+require 'creature'
+
 class Steading < Table
   OPTIONS = RangedHash.new({
     (1..5) => '<%= village %>',

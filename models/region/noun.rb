@@ -1,5 +1,3 @@
-require 'models/table'
-
 class Region < Table
   class Noun < Table
     OPTIONS = RangedHash.new(

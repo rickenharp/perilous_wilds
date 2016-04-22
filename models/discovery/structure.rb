@@ -1,4 +1,9 @@
-require 'models/table'
+require 'discovery/structure/enigmatic'
+require 'discovery/structure/infrastructure'
+require 'discovery/structure/dwelling'
+require 'discovery/structure/burial'
+require 'discovery/structure/ruin'
+require 'steading'
 
 class Discovery < Table
   class Structure < Table
@@ -16,25 +21,21 @@ class Discovery < Table
     def enigmatic
       self.sub_table = Enigmatic.new
       'Enigmatic'
-      # @enigmatic ||= "Enigmatic<br />#{Enigmatic.new}"
     end
 
     def infrastructure
       self.sub_table = Infrastructure.new
       'Infrastructure'
-      # @infrastructure ||= "Infrastructure<br />#{Infrastructure.new}"
     end
 
     def dwelling
       self.sub_table = Dwelling.new
       'Dwelling'
-      # @dwelling ||= "Dwelling<br />#{Dwelling.new}"
     end
 
     def burial
       self.sub_table = Burial.new
       'Burial/Religious'
-      # @burial ||= "Burial/Religious<br />#{Burial.new}"
     end
 
     def steading

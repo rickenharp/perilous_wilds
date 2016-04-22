@@ -1,5 +1,3 @@
-require 'models/table'
-
 class Region < Table
   class Terrain < Table
     OPTIONS = RangedHash.new(

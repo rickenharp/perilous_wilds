@@ -1,5 +1,3 @@
-require 'models/table'
-
 class Place < Table
   class Adjective < Table
     OPTIONS = RangedHash.new(

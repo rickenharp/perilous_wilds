@@ -1,3 +1,6 @@
+require 'ranged_hash'
+require 'tilt/erb'
+
 class Table
   attr_accessor :sub_table
 
