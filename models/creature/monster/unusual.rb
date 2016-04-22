@@ -26,19 +26,19 @@ class Creature < Table
       end
 
       def undead_humanoid
-        @undead_humanoid ||= "Undead #{Creature::Humanoid.new.elements.last}"
+        @undead_humanoid ||= "Undead #{Creature::Humanoid.new.roll.elements.last}"
       end
 
       def beast_beast
-        @beast_beast ||= "#{Creature::Beast.new.elements.last} + #{Creature::Beast.new.elements.last}"
+        @beast_beast ||= "#{Creature::Beast.new.roll.elements.last} + #{Creature::Beast.new.roll.elements.last}"
       end
 
       def beast_ability
-        @beast_ability ||= "#{Creature::Beast.new.elements.last} + #{Details::Ability.new.elements.last}"
+        @beast_ability ||= "#{Creature::Beast.new.roll.elements.last} + #{Details::Ability.new.roll.elements.last}"
       end
 
       def beast_feature
-        @beast_feature ||= "#{Creature::Beast.new.elements.last} + #{Details::Feature.new.elements.last}"
+        @beast_feature ||= "#{Creature::Beast.new.roll.elements.last} + #{Details::Feature.new.roll.elements.last}"
       end
     end
   end

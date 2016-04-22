@@ -17,25 +17,25 @@ class Creature < Table
     private
 
     def common
-      self.sub_table = Creature::Humanoid::Common.new
+      self.sub_table = Creature::Humanoid::Common.new.roll
       'Common'
     end
 
     def uncommon
-      self.sub_table = Creature::Humanoid::Uncommon.new
+      self.sub_table = Creature::Humanoid::Uncommon.new.roll
       'Uncommon'
     end
 
     def hybrid
-      self.sub_table = Creature::Humanoid::Hybrid.new
+      self.sub_table = Creature::Humanoid::Hybrid.new.roll
       'Hybrid'
     end
 
     def add_details
-      add_detail('Activity', Details::Activity.new)
-      add_detail('Alignment', Details::Alignment.new)
-      add_detail('Disposition', Details::Disposition.new)
-      add_detail('No. Appearing', Details::NumberAppearing.new)
+      add_detail('Activity', Details::Activity.new.roll)
+      add_detail('Alignment', Details::Alignment.new.roll)
+      add_detail('Disposition', Details::Disposition.new.roll)
+      add_detail('No. Appearing', Details::NumberAppearing.new.roll)
     end
   end
 end

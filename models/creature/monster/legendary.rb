@@ -22,29 +22,29 @@ class Creature < Table
       end
 
       def unusual_huge
-        self.sub_table = Creature::Monster::Unusual.new
+        self.sub_table = Creature::Monster::Unusual.new.roll
         add_detail('Size', 'Huge')
         'Unusual'
       end
 
       def rare_huge
-        self.sub_table = Creature::Monster::Rare.new
+        self.sub_table = Creature::Monster::Rare.new.roll
         add_detail('Size', 'Huge')
         'Rare'
       end
 
       def beast_dragon
-        self.sub_table = Creature::Beast.new
+        self.sub_table = Creature::Beast.new.roll
         'dragon'
       end
 
       def unusual_dragon
-        self.sub_table = Creature::Monster::Unusual.new
+        self.sub_table = Creature::Monster::Unusual.new.roll
         'dragon'
       end
 
       def rare_dragon
-        self.sub_table = Creature::Monster::Rare.new
+        self.sub_table = Creature::Monster::Rare.new.roll
         'dragon'
       end
     end

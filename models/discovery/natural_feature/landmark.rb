@@ -13,7 +13,7 @@ class Discovery < Table
       private
 
       def oddity
-        self.sub_table = Details::Oddity.new
+        self.sub_table = Details::Oddity.new.roll
         'Oddity'
       end
     end

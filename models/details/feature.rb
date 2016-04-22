@@ -15,24 +15,24 @@ module Details
     ).freeze
 
     def aspect
-      @aspect ||= "#{Details::Aspect.new}"
+      @aspect ||= "#{Details::Aspect.new.roll}"
     end
 
     def element
-      @element ||= "#{Details::Element.new}"
+      @element ||= "#{Details::Element.new.roll}"
     end
 
     def magic_type
-      @magic_type ||= "#{Details::MagicType.new}"
+      @magic_type ||= "#{Details::MagicType.new.roll}"
     end
 
     def oddity
-      @oddity ||= "#{Details::Oddity.new}"
+      @oddity ||= "#{Details::Oddity.new.roll}"
     end
 
     def roll_twice
       new_range = Range.new(1, OPTIONS.max - 1)
-      @both ||= Array.new(2) { Feature.new(rand(new_range)) }
+      @both ||= Array.new(2) { Feature.new.roll(rand(new_range)) }
       self.sub_table = @both.collect(&:sub_table).uniq.first
       @both.join(' & ')
     end

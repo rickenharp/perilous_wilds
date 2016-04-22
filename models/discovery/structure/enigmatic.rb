@@ -16,13 +16,13 @@ class Discovery < Table
       private
 
       def add_details
-        add_detail('Age', Details::Age.new(d(8, +4)))
-        add_detail('Size', Details::Size.new(d(8, +4)))
-        add_detail('Visibility', Details::Visibility.new)
+        add_detail('Age', Details::Age.new.roll(d(8, +4)))
+        add_detail('Size', Details::Size.new.roll(d(8, +4)))
+        add_detail('Visibility', Details::Visibility.new.roll)
       end
 
       def oddity
-        self.sub_table = Details::Oddity.new
+        self.sub_table = Details::Oddity.new.roll
         'Oddity'
       end
     end

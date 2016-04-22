@@ -4,13 +4,17 @@ require 'tilt/erb'
 class Table
   attr_accessor :sub_table
 
-  def initialize(number = nil)
+  def initialize
     @details = {}
+  end
+
+  def roll(number = nil)
     last_index = self.class::OPTIONS.max
     @number = number || rand(1..last_index)
     template_string = self.class::OPTIONS[@number]
     @value = Tilt::ERBTemplate.new { template_string }.render(self)
     add_details
+    self
   end
 
   def to_s

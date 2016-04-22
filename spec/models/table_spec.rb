@@ -8,9 +8,9 @@ RSpec.describe Table do
       )
     end
 
-    subject(:test_table) { TestTable.new }
+    subject(:test_table) { TestTable.new.roll }
 
-    it 'returns a random element' do
+    it 'returns a random table' do
       expect(%w(black white)).to include(test_table.to_s)
     end
 
@@ -34,12 +34,12 @@ RSpec.describe Table do
         end
       end
 
-      expect { HookTable.new }.to raise_error('HOOKED!')
+      expect { HookTable.new.roll }.to raise_error('HOOKED!')
     end
   end
 
   describe 'sub-tables' do
-    subject(:test_table) { TopTable.new(7) }
+    subject(:test_table) { TopTable.new.roll(7) }
 
     class TopTable < Table
       OPTIONS = RangedHash.new(
@@ -50,12 +50,12 @@ RSpec.describe Table do
       private
 
       def sub_table_one
-        self.sub_table = SubTableOne.new(2)
+        self.sub_table = SubTableOne.new.roll(2)
         'SubTableOne'
       end
 
       def sub_table_two
-        self.sub_table = SubTableTwo.new(2)
+        self.sub_table = SubTableTwo.new.roll(2)
         'SubTableTwo'
       end
     end
