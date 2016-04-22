@@ -21,7 +21,7 @@ class Discovery < Table
       private
 
       def add_details
-        creature = Creature.new(d(4, +4))
+        creature = ::Creature.new(d(4, +4))
         add_detail('Creature responsible', creature.elements.join(' &rarr; '))
         add_detail('Age', Details::Age.new(d(8, +4)))
         add_detail('Ruination', Details::Ruination.new)
@@ -41,7 +41,7 @@ class Discovery < Table
       end
 
       def ruined_steading
-        self.sub_table = Steading.new
+        self.sub_table = ::Steading.new
         'Steading'
       end
 

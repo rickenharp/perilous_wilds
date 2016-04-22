@@ -17,17 +17,17 @@ class Creature < Table
     private
 
     def common
-      self.sub_table = Common.new
+      self.sub_table = Creature::Humanoid::Common.new
       'Common'
     end
 
     def uncommon
-      self.sub_table = Uncommon.new
+      self.sub_table = Creature::Humanoid::Uncommon.new
       'Uncommon'
     end
 
     def hybrid
-      self.sub_table = Hybrid.new
+      self.sub_table = Creature::Humanoid::Hybrid.new
       'Hybrid'
     end
 

@@ -22,11 +22,11 @@ module Details
     ).freeze
 
     def magic_type
-      @magic_type ||= "#{MagicType.new}"
+      @magic_type ||= "#{Details::MagicType.new}"
     end
 
     def immunity
-      @immunity ||= "immunity: #{Element.new}"
+      @immunity ||= "immunity: #{Details::Element.new}"
     end
 
     def roll_twice

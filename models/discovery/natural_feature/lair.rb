@@ -21,7 +21,7 @@ class Discovery < Table
       end
 
       def add_details
-        creature = Creature.new
+        creature = ::Creature.new
         add_detail('Creature responsible', creature.elements.join(' &rarr; '))
         add_detail('Visibility', Details::Visibility.new)
       end

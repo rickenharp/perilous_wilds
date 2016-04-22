@@ -14,7 +14,7 @@ class Discovery < Table
 
       def add_details
         add_detail('Age', Details::Age.new)
-        creature = Creature.new
+        creature = ::Creature.new
         add_detail('Creature responsible', creature.elements.join(' &rarr; '))
       end
     end
