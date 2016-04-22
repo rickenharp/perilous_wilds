@@ -19,32 +19,32 @@ class Discovery < Table
     private
 
     def lair
-      self.sub_table = Discovery::NaturalFeature::Lair.new
+      self.sub_table = Discovery::NaturalFeature::Lair.new.roll
       'Lair'
     end
 
     def obstacle
-      self.sub_table = Discovery::NaturalFeature::Obstacle.new
+      self.sub_table = Discovery::NaturalFeature::Obstacle.new.roll
       'Obstacle'
     end
 
     def terrain_change
-      self.sub_table = Discovery::NaturalFeature::TerrainChange.new
+      self.sub_table = Discovery::NaturalFeature::TerrainChange.new.roll
       'Terrain Change'
     end
 
     def water_feature
-      self.sub_table = Discovery::NaturalFeature::WaterFeature.new
+      self.sub_table = Discovery::NaturalFeature::WaterFeature.new.roll
       'Water Feature'
     end
 
     def landmark
-      self.sub_table = Discovery::NaturalFeature::Landmark.new
+      self.sub_table = Discovery::NaturalFeature::Landmark.new.roll
       'Landmark'
     end
 
     def resource
-      self.sub_table = Discovery::NaturalFeature::Resource.new
+      self.sub_table = Discovery::NaturalFeature::Resource.new.roll
       'Resource'
     end
   end

@@ -14,27 +14,27 @@ class Discovery < Table
   }.freeze)
 
   def unnatural_feature
-    self.sub_table = Discovery::UnnaturalFeature.new
+    self.sub_table = Discovery::UnnaturalFeature.new.roll
     'Unnatural Feature'
   end
 
   def natural_feature
-    self.sub_table = Discovery::NaturalFeature.new
+    self.sub_table = Discovery::NaturalFeature.new.roll
     'Natural Feature'
   end
 
   def evidence
-    self.sub_table = Discovery::Evidence.new
+    self.sub_table = Discovery::Evidence.new.roll
     'Evidence'
   end
 
   def creature
-    self.sub_table = ::Creature.new
+    self.sub_table = ::Creature.new.roll
     'Creature'
   end
 
   def structure
-    self.sub_table = Discovery::Structure.new
+    self.sub_table = Discovery::Structure.new.roll
     'Structure'
   end
 end

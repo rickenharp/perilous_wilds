@@ -15,10 +15,10 @@ class Discovery < Table
       ).freeze
 
       def add_details
-        creature = ::Creature.new(d(4, +4))
+        creature = ::Creature.new.roll(d(4, +4))
         add_detail('Creature responsible', creature.elements.join(' &rarr; '))
-        add_detail('Alignment', Details::Alignment.new)
-        add_detail('Aspect', Details::Aspect.new)
+        add_detail('Alignment', Details::Alignment.new.roll)
+        add_detail('Aspect', Details::Aspect.new.roll)
       end
     end
   end

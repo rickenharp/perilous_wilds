@@ -1,7 +1,9 @@
 require 'roda_helper'
 
 RSpec.describe Discovery::Structure::Enigmatic do
-  it_behaves_like 'a random element'
+  it_behaves_like 'a random table'
+
+  subject { described_class.new.roll }
 
   it 'has Age detail' do
     expect(subject.details).to include('Age')

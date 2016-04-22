@@ -29,32 +29,32 @@ class PerilousWilds < Roda
     end
 
     r.is 'region' do
-      @region = Region.new
+      @region = Region.new.roll
       view(:region)
     end
 
     r.is 'place' do
-      @place = Place.new
+      @place = Place.new.roll
       view(:place)
     end
 
     r.is 'item' do
-      @item = Item.new
+      @item = Item.new.roll
       view(:item)
     end
 
     r.is 'discovery' do
-      @discovery = Discovery.new
+      @discovery = Discovery.new.roll
       view(:discovery)
     end
 
     r.is 'creature' do
-      @creature = Creature.new
+      @creature = Creature.new.roll
       view(:creature)
     end
 
     r.is 'steading' do
-      @steading = Steading.new
+      @steading = Steading.new.roll
       view(:steading)
     end
   end

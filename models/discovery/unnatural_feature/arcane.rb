@@ -13,8 +13,8 @@ class Discovery < Table
       ).freeze
 
       def add_details
-        add_detail('Alignment', Details::Alignment.new)
-        add_detail('Magic Type', Details::MagicType.new)
+        add_detail('Alignment', Details::Alignment.new.roll)
+        add_detail('Magic Type', Details::MagicType.new.roll)
       end
     end
   end

@@ -1,16 +1,16 @@
-require 'pry'
-shared_examples 'a random element' do
+shared_examples 'a random table' do
   describe '#initialize' do
     it 'takes an optional parameter' do
-      expect { described_class.new(1) }.to_not raise_error
+      expect { described_class.new.roll(1) }.to_not raise_error
     end
 
     it 'works with no parameter' do
-      expect { described_class.new }.to_not raise_error
+      expect { described_class.new.roll }.to_not raise_error
     end
   end
 
   describe '#to_s' do
+    subject { described_class.new.roll }
     it 'returns one of the OPTIONS' do
       rendered_options = described_class::OPTIONS.values.map do |string|
         template = Tilt::ERBTemplate.new { string }

@@ -19,32 +19,32 @@ class Discovery < Table
     private
 
     def enigmatic
-      self.sub_table = Discovery::Structure::Enigmatic.new
+      self.sub_table = Discovery::Structure::Enigmatic.new.roll
       'Enigmatic'
     end
 
     def infrastructure
-      self.sub_table = Discovery::Structure::Infrastructure.new
+      self.sub_table = Discovery::Structure::Infrastructure.new.roll
       'Infrastructure'
     end
 
     def dwelling
-      self.sub_table = Discovery::Structure::Dwelling.new
+      self.sub_table = Discovery::Structure::Dwelling.new.roll
       'Dwelling'
     end
 
     def burial
-      self.sub_table = Discovery::Structure::Burial.new
+      self.sub_table = Discovery::Structure::Burial.new.roll
       'Burial/Religious'
     end
 
     def steading
-      self.sub_table = ::Steading.new
+      self.sub_table = ::Steading.new.roll
       'Steading'
     end
 
     def ruin
-      self.sub_table = Discovery::Structure::Ruin.new
+      self.sub_table = Discovery::Structure::Ruin.new.roll
       'Ruin'
     end
   end

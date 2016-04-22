@@ -12,7 +12,7 @@ class Discovery < Table
       ).freeze
 
       def add_details
-        creature = ::Creature.new(d(4, +4))
+        creature = ::Creature.new.roll(d(4, +4))
         add_detail('Creature responsible', creature.elements.join(' &rarr; '))
       end
     end

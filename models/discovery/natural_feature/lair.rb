@@ -16,14 +16,14 @@ class Discovery < Table
       private
 
       def ruins
-        self.sub_table = Discovery::Structure::Ruin.new
+        self.sub_table = Discovery::Structure::Ruin.new.roll
         'ruins'
       end
 
       def add_details
-        creature = ::Creature.new
+        creature = ::Creature.new.roll
         add_detail('Creature responsible', creature.elements.join(' &rarr; '))
-        add_detail('Visibility', Details::Visibility.new)
+        add_detail('Visibility', Details::Visibility.new.roll)
       end
     end
   end
