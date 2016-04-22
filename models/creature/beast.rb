@@ -17,17 +17,17 @@ class Creature < Table
     private
 
     def earthbound
-      self.sub_table = Earthbound.new
+      self.sub_table = Creature::Beast::Earthbound.new
       'Earthbound'
     end
 
     def airborne
-      self.sub_table = Airborne.new
+      self.sub_table = Creature::Beast::Airborne.new
       'Airborne'
     end
 
     def water_going
-      self.sub_table = WaterGoing.new
+      self.sub_table = Creature::Beast::WaterGoing.new
       'Water-Going'
     end
 

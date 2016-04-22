@@ -13,17 +13,17 @@ class Discovery < Table
     private
 
     def tracks
-      self.sub_table = Tracks.new
+      self.sub_table = Discovery::Evidence::Tracks.new
       'Tracks/Spoor'
     end
 
     def remains
-      self.sub_table = Remains.new
+      self.sub_table = Discovery::Evidence::Remains.new
       'Remains/Debris'
     end
 
     def stash
-      self.sub_table = Stash.new
+      self.sub_table = Discovery::Evidence::Stash.new
       'Stash/Cache'
     end
   end

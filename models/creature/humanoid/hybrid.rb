@@ -22,15 +22,15 @@ class Creature < Table
       end
 
       def werecreature
-        @werecreature ||= "werecreature (#{Beast.new.elements.last})"
+        @werecreature ||= "werecreature (#{Creature::Beast.new.elements.last})"
       end
 
       def human_beast
-        @human_beast ||= "human + #{Beast.new.elements.last}"
+        @human_beast ||= "human + #{Creature::Beast.new.elements.last}"
       end
 
       def human_2_beast
-        @human_2_beast ||= "human + #{Beast.new.elements.last} + #{Beast.new.elements.last}"
+        @human_2_beast ||= "human + #{Creature::Beast.new.elements.last} + #{Creature::Beast.new.elements.last}"
       end
     end
   end

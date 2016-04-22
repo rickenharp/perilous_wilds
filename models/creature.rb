@@ -17,7 +17,7 @@ class Creature < Table
   private
 
   def beast
-    self.sub_table = Beast.new
+    self.sub_table = Creature::Beast.new
     'Beast'
   end
 
@@ -30,12 +30,12 @@ class Creature < Table
   end
 
   def humanoid
-    self.sub_table = Humanoid.new
+    self.sub_table = Creature::Humanoid.new
     'Humanoid'
   end
 
   def monster
-    self.sub_table = Monster.new
+    self.sub_table = Creature::Monster.new
     'Monster'
   end
 end

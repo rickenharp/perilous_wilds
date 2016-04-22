@@ -18,17 +18,17 @@ class Creature < Table
     private
 
     def unusual
-      self.sub_table = Unusual.new
+      self.sub_table = Creature::Monster::Unusual.new
       'Unusual'
     end
 
     def rare
-      self.sub_table = Rare.new
+      self.sub_table = Creature::Monster::Rare.new
       'Rare'
     end
 
     def legendary
-      self.sub_table = Legendary.new
+      self.sub_table = Creature::Monster::Legendary.new
       'Legendary'
     end
 

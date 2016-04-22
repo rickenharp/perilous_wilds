@@ -11,7 +11,7 @@ class Steading < Table
   private
 
   def add_details
-    creature = Creature.new(d(4, +4))
+    creature = ::Creature.new(d(4, +4))
     add_detail('Built by', creature.elements.join(' &rarr; '))
   end
 

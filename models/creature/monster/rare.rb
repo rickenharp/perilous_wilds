@@ -24,7 +24,7 @@ class Creature < Table
       end
 
       def beast_oddity
-        @beast_oddity ||= "#{Beast.new.elements.last} + #{Details::Oddity.new.elements.last}"
+        @beast_oddity ||= "#{Creature::Beast.new.elements.last} + #{Details::Oddity.new.elements.last}"
       end
 
       def unnatural_entity
