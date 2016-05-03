@@ -48,6 +48,11 @@ class PerilousWilds < Roda
       view(:discovery)
     end
 
+    r.is 'danger' do
+      @danger = Danger.new.roll
+      view(:danger)
+    end
+
     r.is 'creature' do
       @creature = Creature.new.roll
       view(:creature)

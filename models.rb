@@ -5,6 +5,7 @@ $LOAD_PATH << File.expand_path('models')
 require 'table'
 require 'creature'
 require 'discovery'
+require 'danger'
 require 'item'
 require 'place'
 require 'region'

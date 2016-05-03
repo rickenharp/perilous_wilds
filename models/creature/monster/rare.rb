@@ -28,7 +28,8 @@ class Creature < Table
       end
 
       def unnatural_entity
-        'Unnatural Entity' # TODO: UnnaturalEntity
+        self.sub_table = Danger::UnnaturalEntity.new.roll
+        'Unnatural Entity'
       end
     end
   end

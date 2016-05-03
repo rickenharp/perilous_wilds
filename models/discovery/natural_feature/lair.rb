@@ -10,7 +10,7 @@ class Discovery < Table
         (4..7) => 'cave/tunnel',
         (8..9) => 'nest/aerie',
         (10..10) => 'hive',
-        (11..12) => '<%= ruins %>' # TODO: Structure
+        (11..12) => '<%= ruins %>'
       ).freeze
 
       private
