@@ -1,0 +1,14 @@
+<h1>Danger</h1>
+<p>
+<%= @danger.elements.join(' &rarr; ') %>
+</p>
+
+<% @danger.details.each do |name, value| %>
+<p>
+  <b><%= name %>:</b> <i><%= value %></i>
+</p>
+<% end %>
+
+<a href="/danger?seed=<%= Base58.encode(@seed) %>">Share</a><br>
+<a href="/danger">reload</a><br>
+<a href="/welcome">back</a>
