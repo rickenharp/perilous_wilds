@@ -21,7 +21,7 @@ module Details
 
     def element
       # self.sub_table = Details::Element.new.roll
-      "Element (#{Details::Element.new.roll})"
+      @element ||= "Element (#{Details::Element.new.roll})"
     end
 
     def roll_twice

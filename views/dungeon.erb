@@ -1,0 +1,26 @@
+<h1>Dungeon</h1>
+
+<p>
+  <b>Size:</b> <i><%= @dungeon.size %></i>
+</p>
+<p>
+  <b>Builder:</b> <i><%= @dungeon.foundation.builder %></i>
+</p>
+<p>
+  <b>Function:</b> <i><%= @dungeon.foundation.function %></i>
+</p>
+<p>
+  <b>Ruination:</b> <i><%= @dungeon.ruination %></i>
+</p>
+<p>
+  <b>Themes:</b>
+  <ul>
+    <% @dungeon.themes.each do |theme| %>
+    <li><i><%= theme %></i></li>
+    <% end  %>
+  </ul>
+</p>
+
+<a href="/dungeon?seed=<%= Base58.encode(@seed) %>">Share</a><br>
+<a href="/dungeon">reload</a><br>
+<a href="/welcome">back</a>

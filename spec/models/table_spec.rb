@@ -23,6 +23,24 @@ RSpec.describe Table do
       expect(test_table.details).to eq('Foo' => 'Bar')
     end
 
+    it '#eql?' do
+      foo = TestTable.new.roll(1)
+      bar = TestTable.new.roll(1)
+      expect(foo).to be_eql bar
+    end
+
+    it '#eq' do
+      foo = TestTable.new.roll(1)
+      bar = TestTable.new.roll(1)
+      expect(foo).to be_eq bar
+    end
+
+    it '#==' do
+      foo = TestTable.new.roll(1)
+      bar = TestTable.new.roll(1)
+      expect(foo).to be == bar
+    end
+
     it 'calls the add_details callback' do
       class HookTable < Table
         OPTIONS = RangedHash.new(
