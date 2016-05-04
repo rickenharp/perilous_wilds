@@ -38,6 +38,18 @@ class Table
   def add_details
   end
 
+  def eql?(other)
+    to_s.eql?(other.to_s)
+  end
+
+  def eq?(other)
+    to_s == other.to_s
+  end
+
+  def ==(other)
+    to_s == other.to_s
+  end
+
   private
 
   def d(max, addition = 0)

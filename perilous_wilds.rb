@@ -62,5 +62,10 @@ class PerilousWilds < Roda
       @steading = Steading.new.roll
       view(:steading)
     end
+
+    r.is 'dungeon' do
+      @dungeon = Dungeon.new.roll
+      view(:dungeon)
+    end
   end
 end
