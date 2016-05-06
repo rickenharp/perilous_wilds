@@ -35,7 +35,7 @@ class Danger < Table
       end
 
       def oddity
-        self.sub_table = Details::Oddity.new.roll
+        self.sub_table = Details::Oddity.new(random).roll
         'Oddity'
       end
     end

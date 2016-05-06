@@ -31,8 +31,8 @@ class Danger < Table
       end
 
       def add_details
-        add_detail('Aspect', Details::Aspect.new.roll)
-        add_detail('Visibility', Details::Visibility.new.roll)
+        add_detail('Aspect', Details::Aspect.new(random).roll)
+        add_detail('Visibility', Details::Visibility.new(random).roll)
       end
     end
   end

@@ -24,11 +24,11 @@ class Creature < Table
       end
 
       def beast_oddity
-        @beast_oddity ||= "#{Creature::Beast.new.roll.elements.last} + #{Details::Oddity.new.roll.elements.last}"
+        @beast_oddity ||= "#{Creature::Beast.new(random).roll.elements.last} + #{Details::Oddity.new(random).roll.elements.last}"
       end
 
       def unnatural_entity
-        self.sub_table = Danger::UnnaturalEntity.new.roll
+        self.sub_table = Danger::UnnaturalEntity.new(random).roll
         'Unnatural Entity'
       end
     end

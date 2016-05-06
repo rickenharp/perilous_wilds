@@ -22,15 +22,15 @@ class Creature < Table
       end
 
       def werecreature
-        @werecreature ||= "werecreature (#{Creature::Beast.new.roll.elements.last})"
+        @werecreature ||= "werecreature (#{Creature::Beast.new(random).roll.elements.last})"
       end
 
       def human_beast
-        @human_beast ||= "human + #{Creature::Beast.new.roll.elements.last}"
+        @human_beast ||= "human + #{Creature::Beast.new(random).roll.elements.last}"
       end
 
       def human_2_beast
-        @human_2_beast ||= "human + #{Creature::Beast.new.roll.elements.last} + #{Creature::Beast.new.roll.elements.last}"
+        @human_2_beast ||= "human + #{Creature::Beast.new(random).roll.elements.last} + #{Creature::Beast.new(random).roll.elements.last}"
       end
     end
   end

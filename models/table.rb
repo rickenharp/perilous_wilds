@@ -3,14 +3,16 @@ require 'tilt/erb'
 
 class Table
   attr_accessor :sub_table
+  attr_reader :random
 
-  def initialize
+  def initialize(random = Random.new)
+    @random = random
     @details = {}
   end
 
   def roll(number = nil)
     last_index = self.class::OPTIONS.max
-    @number = number || rand(1..last_index)
+    @number = number || random.rand(1..last_index)
     template_string = self.class::OPTIONS[@number]
     @value = Tilt::ERBTemplate.new { template_string }.render(self)
     add_details
@@ -53,6 +55,6 @@ class Table
   private
 
   def d(max, addition = 0)
-    rand(1..max) + addition
+    random.rand(1..max) + addition
   end
 end

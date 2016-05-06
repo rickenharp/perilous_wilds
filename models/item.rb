@@ -8,10 +8,10 @@ class Item < Table
   }.freeze)
 
   def utility_item
-    @utility_item ||= Item::Utility.new.roll
+    @utility_item ||= Item::Utility.new(random).roll
   end
 
   def art_item
-    @art_item ||= Item::Art.new.roll
+    @art_item ||= Item::Art.new(random).roll
   end
 end

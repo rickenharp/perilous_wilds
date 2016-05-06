@@ -34,10 +34,10 @@ class Danger < Table
       end
 
       def add_details
-        add_detail('Ability', Details::Ability.new.roll)
-        add_detail('Activity', Details::Activity.new.roll)
-        add_detail('Alignment', Details::Alignment.new.roll)
-        add_detail('Disposition', Details::Disposition.new.roll)
+        add_detail('Ability', Details::Ability.new(random).roll)
+        add_detail('Activity', Details::Activity.new(random).roll)
+        add_detail('Alignment', Details::Alignment.new(random).roll)
+        add_detail('Disposition', Details::Disposition.new(random).roll)
       end
     end
   end

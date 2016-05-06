@@ -18,26 +18,26 @@ class Creature < Table
     private
 
     def unusual
-      self.sub_table = Creature::Monster::Unusual.new.roll
+      self.sub_table = Creature::Monster::Unusual.new(random).roll
       'Unusual'
     end
 
     def rare
-      self.sub_table = Creature::Monster::Rare.new.roll
+      self.sub_table = Creature::Monster::Rare.new(random).roll
       'Rare'
     end
 
     def legendary
-      self.sub_table = Creature::Monster::Legendary.new.roll
+      self.sub_table = Creature::Monster::Legendary.new(random).roll
       'Legendary'
     end
 
     def add_details
-      add_detail('Activity', Details::Activity.new.roll)
-      add_detail('Alignment', Details::Alignment.new.roll)
-      add_detail('Disposition', Details::Disposition.new.roll)
-      add_detail('No. Appearing', Details::NumberAppearing.new.roll)
-      add_detail('Size', Details::Size.new.roll)
+      add_detail('Activity', Details::Activity.new(random).roll)
+      add_detail('Alignment', Details::Alignment.new(random).roll)
+      add_detail('Disposition', Details::Disposition.new(random).roll)
+      add_detail('No. Appearing', Details::NumberAppearing.new(random).roll)
+      add_detail('Size', Details::Size.new(random).roll)
     end
   end
 end
