@@ -16,7 +16,7 @@ class Dungeon
       }.freeze)
 
       def humanoid
-        @humanoid ||= Creature::Humanoid.new.roll.elements.last
+        @humanoid ||= Creature::Humanoid.new(random).roll.elements.last
       end
     end
   end

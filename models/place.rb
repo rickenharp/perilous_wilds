@@ -17,14 +17,14 @@ class Place < Table
   private
 
   def noun
-    @noun ||= Place::Noun.new.roll
+    @noun ||= Place::Noun.new(random).roll
   end
 
   def feature
-    @feature ||= Place::Feature.new.roll
+    @feature ||= Place::Feature.new(random).roll
   end
 
   def adjective
-    @adjective ||= Place::Adjective.new.roll
+    @adjective ||= Place::Adjective.new(random).roll
   end
 end

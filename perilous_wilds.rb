@@ -13,12 +13,11 @@ class PerilousWilds < Roda
   route do |r|
     r.assets unless ENV['RACK_ENV'] == 'production'
 
-    if r.params['seed']
-      @seed = Base58.decode(r.params['seed'])
-    else
-      @seed = Random.new_seed
-    end
-    Kernel.srand(@seed)
+    @random = if r.params['seed']
+                Random.new(Base58.decode(r.params['seed']))
+              else
+                Random.new(Random.new_seed)
+              end
 
     r.root do
       r.redirect '/welcome'
@@ -29,42 +28,42 @@ class PerilousWilds < Roda
     end
 
     r.is 'region' do
-      @region = Region.new.roll
+      @region = Region.new(@random).roll
       view(:region)
     end
 
     r.is 'place' do
-      @place = Place.new.roll
+      @place = Place.new(@random).roll
       view(:place)
     end
 
     r.is 'item' do
-      @item = Item.new.roll
+      @item = Item.new(@random).roll
       view(:item)
     end
 
     r.is 'discovery' do
-      @discovery = Discovery.new.roll
+      @discovery = Discovery.new(@random).roll
       view(:discovery)
     end
 
     r.is 'danger' do
-      @danger = Danger.new.roll
+      @danger = Danger.new(@random).roll
       view(:danger)
     end
 
     r.is 'creature' do
-      @creature = Creature.new.roll
+      @creature = Creature.new(@random).roll
       view(:creature)
     end
 
     r.is 'steading' do
-      @steading = Steading.new.roll
+      @steading = Steading.new(@random).roll
       view(:steading)
     end
 
     r.is 'dungeon' do
-      @dungeon = Dungeon.new.roll
+      @dungeon = Dungeon.new(@random).roll
       view(:dungeon)
     end
   end

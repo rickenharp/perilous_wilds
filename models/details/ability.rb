@@ -22,16 +22,16 @@ module Details
     ).freeze
 
     def magic_type
-      @magic_type ||= "#{Details::MagicType.new.roll}"
+      @magic_type ||= "#{Details::MagicType.new(random).roll}"
     end
 
     def immunity
-      @immunity ||= "immunity: #{Details::Element.new.roll}"
+      @immunity ||= "immunity: #{Details::Element.new(random).roll}"
     end
 
     def roll_twice
       new_range = Range.new(1, OPTIONS.max - 1)
-      @both ||= Array.new(2) { Ability.new.roll(rand(new_range)) }
+      @both ||= Array.new(2) { Ability.new(random).roll(rand(new_range)) }
       self.sub_table = @both.collect(&:sub_table).uniq.first
       @both.join(' & ')
     end

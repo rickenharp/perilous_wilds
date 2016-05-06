@@ -1,6 +1,6 @@
 <h1>Random Place</h1>
 <p>welcome to: <b><%= @place %></b></p>
 
-<a href="/place?seed=<%= Base58.encode(@seed) %>">Share</a><br>
+<a href="/place?seed=<%= Base58.encode(@random.seed) %>">Share</a><br>
 <a href="/place">reload</a><br>
 <a href="/welcome">back</a>

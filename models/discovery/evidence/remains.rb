@@ -14,8 +14,8 @@ class Discovery < Table
       ).freeze
 
       def add_details
-        add_detail('Age', Details::Age.new.roll)
-        add_detail('Visibility', Details::Visibility.new.roll)
+        add_detail('Age', Details::Age.new(random).roll)
+        add_detail('Visibility', Details::Visibility.new(random).roll)
       end
     end
   end

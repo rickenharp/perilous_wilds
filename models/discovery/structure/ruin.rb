@@ -21,27 +21,27 @@ class Discovery < Table
       private
 
       def add_details
-        creature = ::Creature.new.roll(d(4, +4))
+        creature = ::Creature.new(random).roll(d(4, +4))
         add_detail('Creature responsible', creature.elements.join(' &rarr; '))
-        add_detail('Age', Details::Age.new.roll(d(8, +4)))
-        add_detail('Ruination', Details::Ruination.new.roll)
-        add_detail('Visibility', Details::Visibility.new.roll)
+        add_detail('Age', Details::Age.new(random).roll(d(8, +4)))
+        add_detail('Ruination', Details::Ruination.new(random).roll)
+        add_detail('Visibility', Details::Visibility.new(random).roll)
       end
 
       def ruined_infrastructure
-        @ri ||= Discovery::Structure::Infrastructure.new.roll(d(6, +6))
+        @ri ||= Discovery::Structure::Infrastructure.new(random).roll(d(6, +6))
       end
 
       def ruined_dwelling
-        @rd ||= Discovery::Structure::Dwelling.new.roll(d(8, +4))
+        @rd ||= Discovery::Structure::Dwelling.new(random).roll(d(8, +4))
       end
 
       def ruined_burial
-        @rb ||= Discovery::Structure::Burial.new.roll(d(8, +4))
+        @rb ||= Discovery::Structure::Burial.new(random).roll(d(8, +4))
       end
 
       def ruined_steading
-        self.sub_table = ::Steading.new.roll
+        self.sub_table = ::Steading.new(random).roll
         'Steading'
       end
 

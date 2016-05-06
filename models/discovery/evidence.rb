@@ -13,17 +13,17 @@ class Discovery < Table
     private
 
     def tracks
-      self.sub_table = Discovery::Evidence::Tracks.new.roll
+      self.sub_table = Discovery::Evidence::Tracks.new(random).roll
       'Tracks/Spoor'
     end
 
     def remains
-      self.sub_table = Discovery::Evidence::Remains.new.roll
+      self.sub_table = Discovery::Evidence::Remains.new(random).roll
       'Remains/Debris'
     end
 
     def stash
-      self.sub_table = Discovery::Evidence::Stash.new.roll
+      self.sub_table = Discovery::Evidence::Stash.new(random).roll
       'Stash/Cache'
     end
   end

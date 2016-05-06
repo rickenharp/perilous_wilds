@@ -17,25 +17,25 @@ class Creature < Table
   private
 
   def beast
-    self.sub_table = Creature::Beast.new.roll
+    self.sub_table = Creature::Beast.new(random).roll
     'Beast'
   end
 
   def human
-    add_detail('Activity', Details::Activity.new.roll)
-    add_detail('Alignment', Details::Alignment.new.roll)
-    add_detail('Disposition', Details::Disposition.new.roll)
-    add_detail('No. Appearing', Details::NumberAppearing.new.roll)
+    add_detail('Activity', Details::Activity.new(random).roll)
+    add_detail('Alignment', Details::Alignment.new(random).roll)
+    add_detail('Disposition', Details::Disposition.new(random).roll)
+    add_detail('No. Appearing', Details::NumberAppearing.new(random).roll)
     'Human'
   end
 
   def humanoid
-    self.sub_table = Creature::Humanoid.new.roll
+    self.sub_table = Creature::Humanoid.new(random).roll
     'Humanoid'
   end
 
   def monster
-    self.sub_table = Creature::Monster.new.roll
+    self.sub_table = Creature::Monster.new(random).roll
     'Monster'
   end
 end

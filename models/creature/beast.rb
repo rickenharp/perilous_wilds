@@ -17,25 +17,25 @@ class Creature < Table
     private
 
     def earthbound
-      self.sub_table = Creature::Beast::Earthbound.new.roll
+      self.sub_table = Creature::Beast::Earthbound.new(random).roll
       'Earthbound'
     end
 
     def airborne
-      self.sub_table = Creature::Beast::Airborne.new.roll
+      self.sub_table = Creature::Beast::Airborne.new(random).roll
       'Airborne'
     end
 
     def water_going
-      self.sub_table = Creature::Beast::WaterGoing.new.roll
+      self.sub_table = Creature::Beast::WaterGoing.new(random).roll
       'Water-Going'
     end
 
     def add_details
-      add_detail('Activity', Details::Activity.new.roll)
-      add_detail('Disposition', Details::Disposition.new.roll)
-      add_detail('No. Appearing', Details::NumberAppearing.new.roll)
-      add_detail('Size', Details::Size.new.roll)
+      add_detail('Activity', Details::Activity.new(random).roll)
+      add_detail('Disposition', Details::Disposition.new(random).roll)
+      add_detail('No. Appearing', Details::NumberAppearing.new(random).roll)
+      add_detail('Size', Details::Size.new(random).roll)
     end
   end
 end

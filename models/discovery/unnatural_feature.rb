@@ -13,17 +13,17 @@ class Discovery < Table
     private
 
     def arcane
-      self.sub_table = Discovery::UnnaturalFeature::Arcane.new.roll
+      self.sub_table = Discovery::UnnaturalFeature::Arcane.new(random).roll
       'Arcane'
     end
 
     def planar
-      self.sub_table = Discovery::UnnaturalFeature::Planar.new.roll
+      self.sub_table = Discovery::UnnaturalFeature::Planar.new(random).roll
       'Planar'
     end
 
     def divine
-      self.sub_table = Discovery::UnnaturalFeature::Divine.new.roll
+      self.sub_table = Discovery::UnnaturalFeature::Divine.new(random).roll
       'Divine'
     end
   end

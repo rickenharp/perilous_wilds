@@ -12,15 +12,15 @@ class Dungeon
     }.freeze)
 
     def mundane
-      @mundane ||= Dungeon::Theme::Mundane.new.roll.to_s
+      @mundane ||= Dungeon::Theme::Mundane.new(random).roll.to_s
     end
 
     def unusual
-      @unusual ||= Dungeon::Theme::Unusual.new.roll.to_s
+      @unusual ||= Dungeon::Theme::Unusual.new(random).roll.to_s
     end
 
     def extraordinary
-      @extraordinary ||= Dungeon::Theme::Extraordinary.new.roll.to_s
+      @extraordinary ||= Dungeon::Theme::Extraordinary.new(random).roll.to_s
     end
   end
 end

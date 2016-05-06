@@ -19,7 +19,7 @@ class Dungeon
       private
 
       def element
-        @element ||= Details::Element.new.roll
+        @element ||= Details::Element.new(random).roll
       end
     end
   end

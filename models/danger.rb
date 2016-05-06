@@ -10,17 +10,17 @@ class Danger < Table
   }.freeze)
 
   def unnatural_entity
-    self.sub_table = Danger::UnnaturalEntity.new.roll
+    self.sub_table = Danger::UnnaturalEntity.new(random).roll
     'Unnatural Entity'
   end
 
   def hazard
-    self.sub_table = Danger::Hazard.new.roll
+    self.sub_table = Danger::Hazard.new(random).roll
     'Hazard'
   end
 
   def creature
-    self.sub_table = ::Creature.new.roll
+    self.sub_table = ::Creature.new(random).roll
     'Creature'
   end
 end

@@ -18,14 +18,14 @@ class Region < Table
   private
 
   def noun
-    @noun ||= Region::Noun.new.roll
+    @noun ||= Region::Noun.new(random).roll
   end
 
   def terrain
-    @terrain ||= Region::Terrain.new.roll
+    @terrain ||= Region::Terrain.new(random).roll
   end
 
   def adjective
-    @adjective ||= Region::Adjective.new.roll
+    @adjective ||= Region::Adjective.new(random).roll
   end
 end

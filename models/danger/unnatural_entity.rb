@@ -14,17 +14,17 @@ class Danger < Table
     private
 
     def undead
-      self.sub_table = Danger::UnnaturalEntity::Undead.new.roll
+      self.sub_table = Danger::UnnaturalEntity::Undead.new(random).roll
       'Undead'
     end
 
     def planar
-      self.sub_table = Danger::UnnaturalEntity::Planar.new.roll
+      self.sub_table = Danger::UnnaturalEntity::Planar.new(random).roll
       'Planar'
     end
 
     def divine
-      self.sub_table = Danger::UnnaturalEntity::Divine.new.roll
+      self.sub_table = Danger::UnnaturalEntity::Divine.new(random).roll
       'Divine'
     end
   end
