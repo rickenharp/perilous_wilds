@@ -1,0 +1,33 @@
+<h1>Adventure</h1>
+
+<p>
+  <b>Title:</b> <i><%= @adventure.title %></i>
+</p>
+<p>
+  <b>Mission:</b> <i><%= @adventure.mission %></i>
+</p>
+<p>
+  <b>Hook:</b> <i><%= @adventure.hook %></i>
+</p>
+<p>
+  <b>Antagonist:</b> <i><%= @adventure.antagonist %></i>
+</p>
+<p>
+  <b>Potential Ally:</b> <i><%= @adventure.ally %></i>
+</p>
+<p>
+  <b>Complication:</b> <i><%= @adventure.complication %></i>
+</p>
+<p>
+  <b>Obstacle:</b> <i><%= @adventure.obstacle %></i>
+</p>
+<p>
+  <b>Twist:</b> <i><%= @adventure.twist %></i>
+</p>
+<p>
+  <b>Reward:</b> <i><%= @adventure.reward %></i>
+</p>
+
+<a href="/adventure?seed=<%= Base58.encode(@random.seed) %>">Share</a><br>
+<a href="/adventure">reload</a><br>
+<a href="/welcome">back</a>
