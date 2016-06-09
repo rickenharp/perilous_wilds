@@ -104,7 +104,7 @@ GEM
       codeclimate-engine-rb (~> 0.3.1)
       parser (~> 2.3, >= 2.3.0.6)
       rainbow (~> 2.0)
-    roda (2.13.0)
+    roda (2.14.0)
       rack
     rspec (3.4.0)
       rspec-core (~> 3.4.0)
@@ -181,4 +181,4 @@ DEPENDENCIES
   unicorn
 
 BUNDLED WITH
-   1.11.2
+   1.12.4
