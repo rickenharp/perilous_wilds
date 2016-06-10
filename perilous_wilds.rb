@@ -7,6 +7,7 @@ require 'base58'
 
 class PerilousWilds < Roda
   plugin :render
+  plugin :head
   plugin :assets, css: 'style.scss'
   compile_assets
 
