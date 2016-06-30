@@ -72,5 +72,10 @@ class PerilousWilds < Roda
       @adventure = Adventure.new(@random).roll
       view(:adventure)
     end
+
+    r.is 'character' do
+      @character = Character.new.roll
+      view(:character)
+    end
   end
 end
