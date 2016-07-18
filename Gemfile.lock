@@ -94,7 +94,7 @@ GEM
       coderay (~> 1.1.0)
       method_source (~> 0.8.1)
       slop (~> 3.4)
-    rack (1.6.4)
+    rack (2.0.1)
     rack-test (0.6.3)
       rack (>= 1.0)
     rainbow (2.1.0)
@@ -107,7 +107,7 @@ GEM
       codeclimate-engine-rb (~> 0.3.1)
       parser (~> 2.3, >= 2.3.0.6)
       rainbow (~> 2.0)
-    roda (2.14.0)
+    roda (2.16.0)
       rack
     rspec (3.5.0)
       rspec-core (~> 3.5.0)
