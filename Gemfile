@@ -19,6 +19,7 @@ group :development do
   gem 'rubycritic'
   gem 'guard'
   gem 'guard-rspec'
+  gem 'racksh'
 end
 
 group :test do

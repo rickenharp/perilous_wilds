@@ -100,6 +100,9 @@ GEM
     rack (1.6.4)
     rack-test (0.6.3)
       rack (>= 1.0)
+    racksh (1.0.0)
+      rack (>= 1.0)
+      rack-test (>= 0.5)
     rainbow (2.1.0)
     raindrops (0.16.0)
     rake (11.1.2)
@@ -179,6 +182,7 @@ DEPENDENCIES
   guard-rspec
   pry
   rack (~> 1.6)
+  racksh
   roda
   rspec
   rubycritic
