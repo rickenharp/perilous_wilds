@@ -7,7 +7,12 @@ module Details
       (5..7) => 'woodland/forest/jungle',
       (8..9) => 'highland/hills',
       (10..11) => 'mountains',
-      (12..12) => 'Oddity',
+      (12..12) => '<%= oddity %>'
     ).freeze
+
+    def oddity
+      self.sub_table = Details::Oddity.new(random).roll
+      'Oddity'
+    end
   end
 end
