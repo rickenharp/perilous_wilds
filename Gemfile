@@ -6,7 +6,7 @@ gem 'tilt'
 gem 'sass'
 gem 'unicorn'
 gem 'base58'
-gem 'rack', '~> 1.6'
+gem 'rack'
 
 group :development do
   gem 'shotgun'
