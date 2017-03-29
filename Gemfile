@@ -13,6 +13,8 @@ group :development do
   gem 'capistrano'
   gem 'capistrano-bundler'
   gem 'capistrano-rbenv'
+  gem 'rbnacl'
+  gem 'bcrypt_pbkdf'
   gem 'rspec'
   gem 'awesome_print'
   gem 'pry'
