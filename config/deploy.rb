@@ -5,7 +5,7 @@ set :application, 'perilous-wilds'
 set :repo_url, 'git@github.com:rickenharp/perilous_wilds.git'
 
 set :rbenv_type, :user # or :system, depends on your rbenv setup
-set :rbenv_ruby, '2.3.0'
+set :rbenv_ruby, '2.4.1'
 set :bundle_binstubs, -> { shared_path.join('bin') }
 set :bundle_jobs, 4
 
