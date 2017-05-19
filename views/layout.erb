@@ -29,5 +29,7 @@
   Adventure Generator based on <a href="http://www.hyperborea.tv/resources.html">"Random Sword &amp; Sorcery Adventure Generator"</a> by Ben Ball
   <br>
   Contact: <a href="mailto:alexander.graefe@googlemail.com">alexander.graefe@googlemail.com</a>
+  <br>
+  Revision: <%= (File.exist?('REVISION') ? File.read('REVISION') : `git rev-parse HEAD`).slice(0,10) %>
 </body>
 </html>
