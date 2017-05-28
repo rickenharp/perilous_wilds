@@ -13,4 +13,4 @@ COPY Gemfile.lock /usr/src/app/
 RUN bundle install --without "$bundle_without" --deployment
 COPY . /usr/src/app
 
-CMD ["bundle", "exec", "puma", "-e", "production"]
+CMD ["bundle", "exec", "puma", "-v", "-e", "production"]
