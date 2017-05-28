@@ -21,6 +21,6 @@ jobs:
     file: perilous_wilds/build.yml
   - put: perilous_wilds-docker-image
     params:
-      build: workspace/perilous_wilds
+      build: workspace
       build_args:
-        bundle_without: "test development"
+        bundle_without: test
