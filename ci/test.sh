@@ -8,4 +8,4 @@ pushd perilous_wilds
   git rev-parse HEAD > REVISION
 popd
 
-cp -R perilous_wilds "workspace"
+cp -R perilous_wilds/* "workspace"
