@@ -1,0 +1,13 @@
+resources:
+- name: perilous_wilds
+  type: git
+  source:
+    uri: https://github.com/rickenharp/perilous_wilds
+    branch: master
+
+jobs:
+- name: test-app
+  plan:
+  - get: perilous_wilds
+  - task: tests
+    file: flight-school/build.yml

@@ -12,7 +12,7 @@ class PerilousWilds < Roda
   compile_assets
 
   route do |r|
-    r.assets unless ENV['RACK_ENV'] == 'production'
+    r.assets #unless ENV['RACK_ENV'] == 'production'
 
     @random = if r.params['seed']
                 Random.new(Base58.decode(r.params['seed']))
