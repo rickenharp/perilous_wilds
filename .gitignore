@@ -4,3 +4,4 @@ spec/examples.txt
 tmp/
 coverage/
 log/
+credentials.yml

@@ -4,11 +4,21 @@ resources:
   source:
     uri: https://github.com/rickenharp/perilous_wilds
     branch: master
+- name: perilous_wilds-docker-image
+  type: docker-image
+  source:
+    username: {{docker-registry-username}}
+    password: {{docker-registry-password}}
+    repository: {{docker-registry-image-perilous_wilds}}
 
 jobs:
 - name: test-app
+  serial: true
   plan:
   - get: perilous_wilds
     trigger: true
   - task: tests
     file: perilous_wilds/build.yml
+  - put: perilous_wilds-docker-image
+    params:
+      build: perilous_wilds
