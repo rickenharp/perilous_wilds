@@ -4,7 +4,7 @@ source 'https://rubygems.org'
 gem 'roda'
 gem 'tilt'
 gem 'sass'
-gem 'unicorn'
+gem 'puma'
 gem 'base58'
 gem 'rack'
 

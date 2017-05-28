@@ -1,7 +1,7 @@
 FROM ruby:2.4-alpine
 
 ARG bundle_without
-EXPOSE 8080
+EXPOSE 9292
 RUN apk --update --no-cache add --virtual build_deps \
   build-base ruby-dev libc-dev linux-headers \
   openssl-dev postgresql-dev libxml2-dev libxslt-dev
@@ -13,4 +13,4 @@ COPY Gemfile.lock /usr/src/app/
 RUN bundle install --without "$bundle_without" --deployment
 COPY . /usr/src/app
 
-CMD ["bundle", "exec", "unicorn", "-E", "production"]
+CMD ["bundle", "exec", "puma", "-e", "production"]
