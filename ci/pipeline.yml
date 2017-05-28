@@ -9,5 +9,6 @@ jobs:
 - name: test-app
   plan:
   - get: perilous_wilds
+    trigger: true
   - task: tests
-    file: flight-school/build.yml
+    file: perilous_wilds/build.yml
