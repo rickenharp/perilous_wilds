@@ -9,5 +9,8 @@ image_resource:
 inputs:
 - name: perilous_wilds
 
+outputs:
+- name: workspace
+
 run:
   path: ./perilous_wilds/ci/test.sh
