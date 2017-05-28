@@ -22,3 +22,5 @@ jobs:
   - put: perilous_wilds-docker-image
     params:
       build: perilous_wilds
+      build_args:
+        bundle_without: "test development"
