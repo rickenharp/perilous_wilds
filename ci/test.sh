@@ -3,7 +3,9 @@
 set -e -x
 
 pushd perilous_wilds
-  git rev-parse HEAD > REVISION
   bundle install
   bundle exec rspec
+  git rev-parse HEAD > REVISION
 popd
+
+cp -R perilous_wilds "workspace"
