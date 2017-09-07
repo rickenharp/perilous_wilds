@@ -1,6 +1,10 @@
 pipeline {
   agent {
-        docker { image 'geekwire.net:5000/ruby-ci:2.4' }
+        docker {
+          image 'geekwire.net:5000/ruby-ci:2.4'
+          registryUrl 'https://geekwire.net:5000/'
+          registryCredentialsId 'GeekwireDockerRepo'
+        }
     }
 
   stages {
