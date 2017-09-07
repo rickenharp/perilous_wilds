@@ -14,6 +14,7 @@ pipeline {
         sh "id"
         sh 'pwd'
         sh "ls -l"
+        sh "ruby -v"
       }
     }
     stage('Test') {
