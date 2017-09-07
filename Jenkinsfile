@@ -4,6 +4,13 @@ pipeline {
     }
 
   stages {
+    stage('Debug'){
+      steps {
+        sh 'whoami'
+        sh 'pwd'
+        sh "ls -l"
+      }
+    }
     stage('Test') {
       steps {
         sh 'apk --update --no-cache add --virtual build_deps \
