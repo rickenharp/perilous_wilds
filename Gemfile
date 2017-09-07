@@ -27,4 +27,5 @@ end
 group :test do
   gem 'capybara'
   gem 'simplecov', require: false
+  gem "rspec_junit_formatter"
 end

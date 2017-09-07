@@ -1,3 +1,4 @@
+#!/usr/bin/env groovy
 pipeline {
   agent {
         docker {
@@ -16,8 +17,13 @@ pipeline {
     }
     stage('Test') {
       steps {
-        sh 'bundle exec rspec'
+        sh 'bundle exec rspec --format progress --format RspecJunitFormatter --out rspec.xml'
       }
+    }
+  }
+  post {
+    always {
+     junit 'rspec.xml'
     }
   }
 }
