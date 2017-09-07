@@ -9,17 +9,13 @@ pipeline {
     }
 
   stages {
-    stage('Debug'){
+    stage('Bundler'){
       steps {
-        sh "id"
-        sh 'pwd'
-        sh "ls -l"
-        sh "ruby -v"
+        sh 'bundle install'
       }
     }
     stage('Test') {
       steps {
-        sh 'bundle install'
         sh 'bundle exec rspec'
       }
     }
