@@ -17,13 +17,9 @@ pipeline {
     }
     stage('Test') {
       steps {
-        sh 'bundle exec rspec --format progress --format RspecJunitFormatter --out rspec.xml'
+        sh 'bundle exec rspec --format progress --format RspecJunitFormatter --out rspec.xml||true'
+        junit 'rspec.xml'
       }
-    }
-  }
-  post {
-    always {
-     junit 'rspec.xml'
     }
   }
 }
