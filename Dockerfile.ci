@@ -1,0 +1,8 @@
+FROM ruby:2.4-alpine
+
+RUN apk --update --no-cache add --virtual build_deps \
+  build-base ruby-dev libc-dev linux-headers \
+  openssl-dev postgresql-dev libxml2-dev libxslt-dev git
+RUN adduser -u 109 -h /home/jenkins -D jenkins
+RUN chown -R jenkins /usr/local/bundle
+USER jenkins
