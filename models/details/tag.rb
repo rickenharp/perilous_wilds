@@ -18,7 +18,7 @@ module Details
 
     def roll_twice
       new_range = Range.new(1, OPTIONS.max - 1)
-      @both ||= Array.new(2) { Tag.new(random).roll(rand(new_range)) }
+      @both ||= Array.new(2) { Tag.new(random).roll(random.rand(new_range)) }
       self.sub_table = @both.collect(&:sub_table).uniq.first
       @both.join(' & ')
     end
