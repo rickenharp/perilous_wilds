@@ -3,6 +3,7 @@ pipeline {
   agent {
     dockerfile {
       filename "Dockerfile.ci"
+      args '-v $HOME/bundler:/usr/local/bundle'
     }
   }
 
