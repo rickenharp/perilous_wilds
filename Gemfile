@@ -1,7 +1,7 @@
 # A sample Gemfile
 source 'https://rubygems.org'
 
-gem 'roda'
+gem 'roda', "~> 3.0"
 gem 'tilt'
 gem 'sass'
 gem 'puma'

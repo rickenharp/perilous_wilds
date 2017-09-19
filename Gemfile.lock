@@ -117,7 +117,7 @@ GEM
       codeclimate-engine-rb (~> 0.4.0)
       parser (~> 2.3.1, >= 2.3.1.2)
       rainbow (~> 2.0)
-    roda (2.19.0)
+    roda (3.0.0)
       rack
     rspec (3.6.0)
       rspec-core (~> 3.6.0)
@@ -189,7 +189,7 @@ DEPENDENCIES
   rack
   racksh
   rbnacl
-  roda
+  roda (~> 3.0)
   rspec
   rspec_junit_formatter
   rubycritic
@@ -199,4 +199,4 @@ DEPENDENCIES
   tilt
 
 BUNDLED WITH
-   1.15.1
+   1.16.0.pre.2
