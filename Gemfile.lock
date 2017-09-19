@@ -154,11 +154,16 @@ GEM
     shellany (0.0.1)
     shotgun (0.9.2)
       rack (>= 1.0)
-    simplecov (0.14.1)
+    simplecov (0.15.1)
       docile (~> 1.1.0)
       json (>= 1.8, < 3)
       simplecov-html (~> 0.10.0)
-    simplecov-html (0.10.1)
+    simplecov-html (0.10.2)
+    simplecov-json (0.2)
+      json
+      simplecov
+    simplecov-rcov (0.2.3)
+      simplecov (>= 0.4.1)
     slop (3.6.0)
     sshkit (1.13.0)
       net-scp (>= 1.1.2)
@@ -199,6 +204,8 @@ DEPENDENCIES
   sass
   shotgun
   simplecov
+  simplecov-json
+  simplecov-rcov
   tilt
 
 BUNDLED WITH
