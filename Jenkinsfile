@@ -28,10 +28,12 @@ pipeline {
               reportFiles: 'index.html',
               reportName: 'RCov Report'
           ]
-          rcov {
-            reportDirectory('coverage')
-            totalCoverage(80, 50, 0)
-            codeCoverage(80, 50, 0)
+          publishers {
+            rcov {
+              reportDirectory('coverage')
+              totalCoverage(80, 50, 0)
+              codeCoverage(80, 50, 0)
+            }
           }
         }
       }
