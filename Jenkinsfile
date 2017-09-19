@@ -27,7 +27,12 @@ pipeline {
               reportDir: 'coverage',
               reportFiles: 'index.html',
               reportName: 'RCov Report'
-            ]
+          ]
+          rcov {
+            reportDirectory('coverage')
+            totalCoverage(80, 50, 0)
+            codeCoverage(80, 50, 0)
+          }
         }
       }
     }
