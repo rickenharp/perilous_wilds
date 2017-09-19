@@ -18,6 +18,18 @@ pipeline {
         sh 'bundle exec rspec --format progress --format RspecJunitFormatter --out rspec.xml||true'
         junit 'rspec.xml'
       }
+      post {
+        success {
+          publishHTML target: [
+              allowMissing: false,
+              alwaysLinkToLastBuild: false,
+              keepAll: true,
+              reportDir: 'coverage',
+              reportFiles: 'index.html',
+              reportName: 'RCov Report'
+            ]
+        }
+      }
     }
   }
 }
