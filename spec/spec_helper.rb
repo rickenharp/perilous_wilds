@@ -24,6 +24,7 @@ SimpleCov.formatters = [
   SimpleCov::Formatter::JSONFormatter,
   SimpleCov::Formatter::RcovFormatter,
 ]
+SimpleCov.coverage_dir('/tmp/test-results/coverage') if ENV['CIRCLECI']
 SimpleCov.start do
   add_filter '/spec/'
 end
