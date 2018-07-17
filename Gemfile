@@ -4,7 +4,7 @@ source 'http://rubygems.org'
 gem 'roda', "~> 3.0"
 gem 'tilt'
 gem 'sass'
-gem 'puma'
+gem 'unicorn'
 gem 'base58'
 gem 'rack'
 
@@ -13,8 +13,9 @@ group :development do
   gem 'capistrano'
   gem 'capistrano-bundler'
   gem 'capistrano-rbenv'
+  gem 'ed25519', ">= 1.2", "< 2.0"
   gem 'rbnacl'
-  gem 'bcrypt_pbkdf'
+  gem 'bcrypt_pbkdf', ">= 1.0", "< 2.0"
   gem 'rspec'
   gem 'awesome_print'
   gem 'pry'
