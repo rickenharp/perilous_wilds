@@ -1,9 +1,11 @@
 $LOAD_PATH << File.expand_path('.')
 
 require 'roda'
+require 'tilt/sassc'
 require 'tilt/erb'
 require 'models'
 require 'base58'
+
 
 class PerilousWilds < Roda
   plugin :render
