@@ -180,7 +180,7 @@ GEM
       sassc (~> 1.12)
       tilt (~> 2.0)
     tty-which (0.3.0)
-    unicorn (5.4.0)
+    unicorn (5.4.1)
       kgio (~> 2.6)
       raindrops (~> 0.7)
     virtus (1.0.5)
