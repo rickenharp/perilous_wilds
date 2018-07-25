@@ -3,7 +3,7 @@ source 'http://rubygems.org'
 
 gem 'roda', "~> 3.10"
 gem 'tilt', "~> 2.0"
-gem 'tilt-sassc', "~> 0.1"
+gem 'sass', "~> 3.5"
 gem 'unicorn', "~> 5.4"
 gem 'base58', "~> 0.2"
 gem 'rack', "~> 2.0"
