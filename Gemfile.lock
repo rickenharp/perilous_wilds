@@ -118,7 +118,7 @@ GEM
       codeclimate-engine-rb (~> 0.4.0)
       parser (>= 2.5.0.0, < 2.6)
       rainbow (>= 2.0, < 4.0)
-    roda (3.10.0)
+    roda (3.11.0)
       rack
     rspec (3.8.0)
       rspec-core (~> 3.8.0)
