@@ -138,7 +138,7 @@ GEM
     ruby_dep (1.5.0)
     ruby_parser (3.11.0)
       sexp_processor (~> 4.9)
-    rubycritic (3.4.0)
+    rubycritic (3.5.1)
       flay (~> 2.8)
       flog (~> 4.4)
       launchy (= 2.4.3)
