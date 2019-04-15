@@ -12,7 +12,7 @@ GEM
       ice_nine (~> 0.11.0)
       thread_safe (~> 0.3, >= 0.3.1)
     base58 (0.2.3)
-    bcrypt_pbkdf (1.0.0)
+    bcrypt_pbkdf (1.0.1)
     capistrano (3.11.0)
       airbrussh (>= 1.0.0)
       i18n
