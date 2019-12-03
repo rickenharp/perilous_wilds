@@ -7,11 +7,13 @@ require 'base58'
 
 class PerilousWilds < Roda
   plugin :render
+  plugin :public
   plugin :head
   plugin :assets, css: 'style.scss'
   compile_assets
 
   route do |r|
+    r.public
     r.assets #unless ENV['RACK_ENV'] == 'production'
 
     @random = if r.params['seed']
