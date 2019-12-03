@@ -19,6 +19,8 @@
 require 'simplecov'
 require 'simplecov-json'
 require 'simplecov-rcov'
+require 'climate_control'
+
 SimpleCov.formatters = [
   SimpleCov::Formatter::HTMLFormatter,
   SimpleCov::Formatter::JSONFormatter,
