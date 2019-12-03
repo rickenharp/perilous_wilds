@@ -1,5 +1,5 @@
 # A sample Gemfile
-source 'http://rubygems.org'
+source 'https://rubygems.org'
 
 gem 'roda', "~> 3.10"
 gem 'tilt', "~> 2.0"
