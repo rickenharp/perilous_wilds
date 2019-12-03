@@ -214,5 +214,8 @@ DEPENDENCIES
   tilt (~> 2.0)
   unicorn (~> 5.4)
 
+RUBY VERSION
+   ruby 2.6.5p114
+
 BUNDLED WITH
    1.17.2
