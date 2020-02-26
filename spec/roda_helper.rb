@@ -5,8 +5,8 @@ require 'awesome_print'
 require 'perilous_wilds'
 require 'capybara/rspec'
 
-RSpec.configure do
-  include Rack::Test::Methods
+RSpec.configure do |c|
+  c.include Rack::Test::Methods
 end
 
 Capybara.configure do |config|
