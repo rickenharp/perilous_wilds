@@ -10,7 +10,7 @@ jobs:
   build:
     docker:
       # specify the version you desire here
-       - image: circleci/ruby:2.6.5
+       - image: circleci/ruby:2.7.0
 
       # Specify service dependencies here if necessary
       # CircleCI maintains a library of pre-built images
@@ -32,7 +32,8 @@ jobs:
       - run:
           name: install dependencies
           command: |
-            bundle install --jobs=4 --retry=3 --path vendor/bundle
+            bundle config --local path vendor/bundle
+            bundle install --jobs=4 --retry=3
 
       - save_cache:
           paths:
