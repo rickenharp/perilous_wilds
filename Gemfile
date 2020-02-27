@@ -1,6 +1,6 @@
 # A sample Gemfile
 source 'https://rubygems.org'
-ruby '2.6.5'
+ruby '2.7.0'
 
 gem 'roda', "~> 3.10"
 gem 'tilt', "~> 2.0"
