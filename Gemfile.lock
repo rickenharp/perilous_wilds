@@ -73,7 +73,6 @@ GEM
     i18n (1.8.2)
       concurrent-ruby (~> 1.0)
     ice_nine (0.11.2)
-    json (2.3.0)
     launchy (2.4.3)
       addressable (~> 2.3)
     listen (3.2.0)
@@ -161,10 +160,7 @@ GEM
     simplecov (0.18.5)
       docile (~> 1.1)
       simplecov-html (~> 0.11)
-    simplecov-html (0.12.1)
-    simplecov-json (0.2)
-      json
-      simplecov
+    simplecov-html (0.12.2)
     simplecov-rcov (0.2.3)
       simplecov (>= 0.4.1)
     sshkit (1.20.0)
@@ -209,7 +205,6 @@ DEPENDENCIES
   sass (~> 3.5)
   shotgun (~> 0.9)
   simplecov (~> 0.16)
-  simplecov-json (~> 0.2)
   simplecov-rcov (~> 0.2)
   tilt (~> 2.0)
 

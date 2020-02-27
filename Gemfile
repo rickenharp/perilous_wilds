@@ -29,7 +29,6 @@ end
 group :test do
   gem 'capybara', "~> 3.3"
   gem 'simplecov', "~> 0.16", require: false
-  gem 'simplecov-json', "~> 0.2", require: false
   gem 'simplecov-rcov', "~> 0.2", require: false
   gem "rspec_junit_formatter", "~> 0.4"
   gem "climate_control", "~> 0.2"
