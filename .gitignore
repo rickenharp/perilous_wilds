@@ -5,3 +5,5 @@ tmp/
 coverage/
 log/
 credentials.yml
+.idea/
+.rakeTasks
