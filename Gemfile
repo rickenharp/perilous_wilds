@@ -4,7 +4,7 @@ ruby '2.7.0'
 
 gem 'roda', "~> 3.10"
 gem 'tilt', "~> 2.0"
-gem 'sass', "~> 3.5"
+gem 'sassc', "~> 2.4"
 gem 'puma'
 gem 'base58', "~> 0.2"
 gem 'rack', "~> 2.0"
