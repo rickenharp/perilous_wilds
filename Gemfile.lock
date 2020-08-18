@@ -100,7 +100,7 @@ GEM
       parser (>= 2.5.0.0, < 2.6)
       rainbow (>= 2.0, < 4.0)
     regexp_parser (1.7.1)
-    roda (3.34.0)
+    roda (3.35.0)
       rack
     rspec (3.9.0)
       rspec-core (~> 3.9.0)
