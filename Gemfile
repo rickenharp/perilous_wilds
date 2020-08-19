@@ -8,6 +8,7 @@ gem 'sassc', "~> 2.4"
 gem 'puma'
 gem 'base58', "~> 0.2"
 gem 'rack', "~> 2.0"
+gem 'rake', "~> 13.0"
 
 group :development do
   gem 'shotgun', "~> 0.9"
