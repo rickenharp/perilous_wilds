@@ -2,16 +2,17 @@
 #
 # Check https://circleci.com/docs/2.0/language-ruby/ for more details
 #
-version: 2
+
 notify:
   webhooks:
     - url: https://webhooks.gitter.im/e/0a4b1c783096fb16765f
 workflows:
-    my-workflow:
-      jobs:
-        - build:
-            context:
-              - docker
+  version: 2
+  my-workflow:
+    jobs:
+      - build:
+          context:
+            - docker
 jobs:
   build:
     docker:
