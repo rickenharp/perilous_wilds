@@ -6,11 +6,20 @@ version: 2
 notify:
   webhooks:
     - url: https://webhooks.gitter.im/e/0a4b1c783096fb16765f
+workflows:
+    my-workflow:
+      jobs:
+        - build:
+            context:
+              - docker
 jobs:
   build:
     docker:
       # specify the version you desire here
        - image: circleci/ruby:2.7.1
+         auth:
+           username: $DOCKERHUB_USER
+           password: $DOCKERHUB_PASSWORD
 
       # Specify service dependencies here if necessary
       # CircleCI maintains a library of pre-built images
