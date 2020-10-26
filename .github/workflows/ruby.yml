@@ -25,8 +25,6 @@ jobs:
     # change this to (see https://github.com/ruby/setup-ruby#versioning):
       uses: ruby/setup-ruby@v1
       with:
-        ruby-version: 2.7
-    - name: Install dependencies
-      run: bundle install
+        bundler-cache: true
     - name: Run tests
       run: bundle exec rake
