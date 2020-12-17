@@ -1,4 +1,4 @@
-FROM ruby:2.4-alpine
+FROM ruby:3.0-rc-alpine
 
 RUN apk --update --no-cache add --virtual build_deps \
   build-base ruby-dev libc-dev linux-headers \
