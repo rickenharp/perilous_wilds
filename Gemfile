@@ -22,6 +22,7 @@ group :development do
   gem 'guard', "~> 2.14"
   gem 'guard-rspec', "~> 4.7"
   gem 'racksh', "~> 1.0"
+  gem 'rubocop'
 end
 
 group :test do
