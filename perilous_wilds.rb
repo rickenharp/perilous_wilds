@@ -4,6 +4,7 @@ require 'roda'
 require 'tilt/erb'
 require 'models'
 require 'base58'
+require 'clogger'
 
 class PerilousWilds < Roda
   plugin :render

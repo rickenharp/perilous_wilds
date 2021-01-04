@@ -20,6 +20,8 @@ GEM
       regexp_parser (~> 1.5)
       xpath (~> 3.2)
     climate_control (0.2.0)
+    clogger (2.3.0)
+      rack (>= 1.0, < 3.0)
     coderay (1.1.2)
     coercible (1.0.0)
       descendants_tracker (~> 0.0.1)
@@ -168,6 +170,7 @@ DEPENDENCIES
   bcrypt_pbkdf (~> 1.0, < 2.0)
   capybara (~> 3.3)
   climate_control (~> 0.2)
+  clogger
   ed25519 (~> 1.2, < 2.0)
   guard (~> 2.14)
   guard-rspec (~> 4.7)
@@ -191,4 +194,4 @@ RUBY VERSION
    ruby 3.0.0p-1
 
 BUNDLED WITH
-   2.2.0
+   2.2.2
