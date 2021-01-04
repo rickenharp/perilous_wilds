@@ -10,7 +10,7 @@ GEM
       ice_nine (~> 0.11.0)
       thread_safe (~> 0.3, >= 0.3.1)
     base58 (0.2.3)
-    bcrypt_pbkdf (1.0.1)
+    bcrypt_pbkdf (1.1.0)
     capybara (3.34.0)
       addressable
       mini_mime (>= 0.1.3)
