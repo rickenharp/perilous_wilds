@@ -17,7 +17,7 @@ jobs:
   build:
     docker:
       # specify the version you desire here
-       - image: circleci/ruby:3.0.0-rc1
+       - image: circleci/ruby:3.0.0
          auth:
            username: $DOCKERHUB_USER
            password: $DOCKERHUB_PASSWORD
