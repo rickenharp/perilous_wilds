@@ -12,7 +12,8 @@ gem 'rack', "~> 2.0"
 gem 'rake', "~> 13.0"
 
 group :development do
-  gem 'shotgun', "~> 0.9"
+  gem 'rerun', '~> 0.13.1'
+  gem 'rb-fsevent'
   gem 'rspec', "~> 3.7"
   gem 'awesome_print', "~> 1.8"
   gem 'pry', "~> 0.11"
