@@ -13,9 +13,6 @@ gem 'rake', "~> 13.0"
 
 group :development do
   gem 'shotgun', "~> 0.9"
-  gem 'ed25519', "~> 1.2", "< 2.0"
-  gem 'rbnacl', "~> 5.0"
-  gem 'bcrypt_pbkdf', "~> 1.0", "< 2.0"
   gem 'rspec', "~> 3.7"
   gem 'awesome_print', "~> 1.8"
   gem 'pry', "~> 0.11"
