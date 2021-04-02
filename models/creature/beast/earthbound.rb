@@ -14,7 +14,7 @@ class Creature < Table
           'deer/horse/camel',
           'ox/rhino',
           'bear/ape/gorilla',
-          'mammoth/dinsoaur'
+          'mammoth/dinosaur'
         ]
       ).freeze
     end
