@@ -17,6 +17,7 @@ group :development do
   gem 'rspec', "~> 3.7"
   gem 'awesome_print', "~> 1.8"
   gem 'pry', "~> 0.11"
+  gem 'rubocop'
   gem 'rubycritic', "~> 4.5"
   gem 'guard', "~> 2.14"
   gem 'guard-rspec', "~> 4.7"
