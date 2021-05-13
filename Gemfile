@@ -6,7 +6,7 @@ gem 'clogger'
 gem 'roda', "~> 3.10"
 gem 'tilt', "~> 2.0"
 gem 'sassc', "~> 2.4"
-gem 'puma'
+gem 'puma', '>= 5.3.1'
 gem 'base58', "~> 0.2"
 gem 'rack', "~> 2.0"
 gem 'rake', "~> 13.0"
