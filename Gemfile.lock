@@ -182,7 +182,7 @@ PLATFORMS
 DEPENDENCIES
   awesome_print (~> 1.8)
   base58 (~> 0.2)
-  capybara (~> 3.3)
+  capybara (~> 3.35, >= 3.35.3)
   climate_control (~> 0.2)
   clogger
   guard (~> 2.14)
