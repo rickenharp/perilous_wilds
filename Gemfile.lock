@@ -198,7 +198,7 @@ DEPENDENCIES
   rspec (~> 3.7)
   rspec_junit_formatter (~> 0.4)
   rubocop
-  rubycritic (~> 4.5)
+  rubycritic (~> 4.6, >= 4.6.1)
   sassc (~> 2.4)
   simplecov (~> 0.16)
   simplecov-rcov (~> 0.2)
