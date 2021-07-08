@@ -17,8 +17,6 @@ jobs:
   test:
 
     runs-on: ubuntu-latest
-    env:
-      BUNDLE_DEPLOYMENT: "false"
 
     steps:
     - uses: actions/checkout@v2
