@@ -5,6 +5,7 @@ require 'tilt/erb'
 require 'models'
 require 'base58'
 require 'clogger'
+require 'rack/deflater'
 
 class PerilousWilds < Roda
   plugin :render
@@ -12,6 +13,8 @@ class PerilousWilds < Roda
   plugin :head
   plugin :assets, css: 'style.scss'
   compile_assets
+
+  use Rack::Deflater
 
   route do |r|
     r.public
