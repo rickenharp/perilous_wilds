@@ -138,6 +138,7 @@ DEPENDENCIES
   erubi
   guard (~> 2.14)
   guard-rspec (~> 4.7)
+  nokogiri (~> 1.12, >= 1.12.5)
   pry (~> 0.11)
   puma
   rack (~> 2.0)
