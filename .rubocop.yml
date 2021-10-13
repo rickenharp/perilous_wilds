@@ -1,7 +1,10 @@
 AllCops:
   TargetRubyVersion: 3.0
   DisplayStyleGuide: true
+  NewCops: enable
 Style/Documentation:
   Enabled: false
 Style/FrozenStringLiteralComment:
+  Enabled: false
+Metrics/MethodLength:
   Enabled: false
