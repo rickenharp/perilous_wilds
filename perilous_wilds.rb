@@ -18,6 +18,18 @@ class PerilousWilds < Roda
   plugin :public
   plugin :head
   plugin :assets, css: 'style.scss'
+  plugin :content_security_policy do |csp|
+    csp.default_src :none # deny everything by default
+    csp.style_src :self
+    csp.script_src :self
+    csp.connect_src :self
+    csp.img_src :self
+    csp.font_src :self
+    csp.form_action :self
+    csp.base_uri :none
+    csp.frame_ancestors :none
+    csp.block_all_mixed_content
+  end
   compile_assets
 
   use Rack::Deflater
