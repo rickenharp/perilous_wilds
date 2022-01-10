@@ -10,6 +10,7 @@ gem 'sassc', "~> 2.4"
 gem 'puma'
 gem 'base58', "~> 0.2"
 gem 'rack', "~> 2.0"
+gem 'rack-ssl-enforcer'
 gem 'rake', "~> 13.0"
 gem 'nokogiri', '~> 1.12', '>= 1.12.5'
 
