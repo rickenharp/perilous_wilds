@@ -8,6 +8,12 @@ require 'clogger'
 require 'rack/deflater'
 
 class PerilousWilds < Roda
+  plugin :default_headers,
+    'Content-Type'=>'text/html',
+    'Strict-Transport-Security'=>'max-age=16070400;',
+    'X-Content-Type-Options'=>'nosniff',
+    'X-Frame-Options'=>'deny',
+    'X-XSS-Protection'=>'1; mode=block'
   plugin :render
   plugin :public
   plugin :head
