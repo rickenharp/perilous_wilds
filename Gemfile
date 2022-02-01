@@ -21,7 +21,6 @@ group :development do
   gem 'awesome_print', "~> 1.8"
   gem 'pry', "~> 0.11"
   gem 'rubocop'
-  # gem 'rubycritic', '~> 4.6', '>= 4.6.1'
   gem 'guard', "~> 2.14"
   gem 'guard-rspec', "~> 4.7"
   gem 'racksh', "~> 1.0"
@@ -30,7 +29,5 @@ end
 group :test do
   gem 'capybara', '~> 3.35', '>= 3.35.3'
   gem 'simplecov', "~> 0.16", require: false
-  gem 'simplecov-rcov', "~> 0.2", require: false
-  gem "rspec_junit_formatter", "~> 0.4"
   gem "climate_control", "~> 0.2"
 end

@@ -17,14 +17,11 @@
 #
 # See http://rubydoc.info/gems/rspec-core/RSpec/Core/Configuration
 require 'simplecov'
-require 'simplecov-rcov'
 require 'climate_control'
 
 SimpleCov.formatters = [
   SimpleCov::Formatter::HTMLFormatter,
-  SimpleCov::Formatter::RcovFormatter,
 ]
-SimpleCov.coverage_dir('/tmp/test-results/coverage') if ENV['CIRCLECI']
 SimpleCov.start do
   add_filter '/spec/'
 end
