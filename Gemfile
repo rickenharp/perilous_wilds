@@ -12,7 +12,9 @@ gem 'base58', "~> 0.2"
 gem 'rack', "~> 2.0"
 gem 'rack-ssl-enforcer'
 gem 'rake', "~> 13.0"
-gem 'nokogiri', '~> 1.12', '>= 1.12.5'
+gem 'nokogiri', '>= 1.13.4'
+
+
 
 group :development do
   gem 'rerun', '~> 0.13.1'
