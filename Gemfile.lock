@@ -148,7 +148,7 @@ GEM
       tilt (~> 2.0)
       yard (~> 0.9, >= 0.9.24)
     thor (1.1.0)
-    tilt (2.1.0)
+    tilt (2.2.0)
     unicode-display_width (2.4.2)
     xpath (3.2.0)
       nokogiri (~> 1.8)
