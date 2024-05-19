@@ -4,7 +4,6 @@ require 'roda'
 require 'tilt/erb'
 require 'models'
 require 'base58'
-require 'clogger'
 require 'rack/deflater'
 
 class PerilousWilds < Roda
@@ -14,6 +13,7 @@ class PerilousWilds < Roda
     'X-Content-Type-Options'=>'nosniff',
     'X-Frame-Options'=>'deny',
     'X-XSS-Protection'=>'1; mode=block'
+  plugin :common_logger, $stdout
   plugin :render
   plugin :public
   plugin :head

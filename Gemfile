@@ -2,7 +2,6 @@
 source 'https://rubygems.org'
 ruby '~> 3.2.0'
 
-gem 'clogger'
 gem 'erubi'
 gem 'roda', "~> 3.10"
 gem 'tilt', "~> 2.0"
@@ -27,6 +26,7 @@ group :development do
   gem 'guard-rspec', "~> 4.7"
   gem 'racksh', "~> 1.0"
   gem 'solargraph', "~> 0.49"
+  gem "yard", ">= 0.9.36"
 end
 
 group :test do
