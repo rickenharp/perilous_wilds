@@ -18,8 +18,6 @@ GEM
       regexp_parser (>= 1.5, < 3.0)
       xpath (~> 3.2)
     climate_control (0.2.0)
-    clogger (2.4.0)
-      rack (>= 1.0, < 3.0)
     coderay (1.1.3)
     diff-lcs (1.5.1)
     docile (1.4.0)
@@ -168,7 +166,6 @@ DEPENDENCIES
   base58 (~> 0.2)
   capybara (~> 3.35, >= 3.35.3)
   climate_control (~> 0.2)
-  clogger
   erubi
   guard (~> 2.14)
   guard-rspec (~> 4.7)

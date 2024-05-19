@@ -2,7 +2,6 @@
 source 'https://rubygems.org'
 ruby '~> 3.2.0'
 
-gem 'clogger'
 gem 'erubi'
 gem 'roda', "~> 3.10"
 gem 'tilt', "~> 2.0"
