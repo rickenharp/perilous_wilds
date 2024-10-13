@@ -1,4 +1,4 @@
-FROM ruby:3.2.1-alpine
+FROM ruby:3.2-alpine
 
 ARG bundle_without
 EXPOSE 3000
@@ -13,6 +13,7 @@ RUN mkdir -p /usr/src/app
 WORKDIR /usr/src/app
 COPY Gemfile /usr/src/app/
 COPY Gemfile.lock /usr/src/app/
+COPY .ruby-version /usr/src/app/
 RUN bundle install
 COPY . /usr/src/app
 

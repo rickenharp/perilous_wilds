@@ -1,6 +1,6 @@
 # A sample Gemfile
 source 'https://rubygems.org'
-ruby '~> 3.2.0'
+ruby file: '.ruby-version'
 
 gem 'erubi'
 gem 'roda', "~> 3.10"
