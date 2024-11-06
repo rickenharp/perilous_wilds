@@ -1,4 +1,4 @@
-FROM ruby:3.2-alpine
+FROM ruby:3.2.6-alpine
 
 ARG bundle_without
 EXPOSE 3000
