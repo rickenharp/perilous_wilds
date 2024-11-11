@@ -2,10 +2,10 @@
 
 name: Fly Deploy
 on:
-  push:
-    branches:
-      - main
-      - master
+  workflow_run:
+    workflows: [Ruby]
+    types: [completed]
+    branches: [master]
 jobs:
   deploy:
     name: Deploy app
