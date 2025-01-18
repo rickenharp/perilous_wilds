@@ -1,9 +1,9 @@
-FROM ruby:3.2.6-alpine
+FROM ruby:3.4.1-alpine
 
 ARG bundle_without
 EXPOSE 3000
 
-RUN gem install bundler:2.2.15
+RUN gem install bundler:2.6.3
 RUN apk -U --no-cache upgrade
 RUN apk --update --no-cache add --virtual build_deps \
   build-base libc-dev linux-headers
