@@ -42,7 +42,7 @@ GEM
       guard-compat (~> 1.1)
       rspec (>= 2.99.0, < 4.0)
     jaro_winkler (1.6.0)
-    json (2.10.2)
+    json (2.11.3)
     kramdown (2.5.1)
       rexml (>= 3.3.9)
     kramdown-parser-gfm (1.1.0)
@@ -141,7 +141,7 @@ GEM
       simplecov_json_formatter (~> 0.1)
     simplecov-html (0.12.3)
     simplecov_json_formatter (0.1.4)
-    solargraph (0.54.0)
+    solargraph (0.54.1)
       backport (~> 1.2)
       benchmark
       bundler (~> 2.0)
