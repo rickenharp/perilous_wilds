@@ -1,7 +1,7 @@
 $LOAD_PATH << File.expand_path('.')
 
 require 'spec_helper'
-require 'awesome_print'
+require 'amazing_print'
 require 'perilous_wilds'
 require 'capybara/rspec'
 
