@@ -19,7 +19,7 @@ group :development do
   gem 'rerun', '~> 0.13.1'
   gem 'rb-fsevent'
   gem 'rspec', "~> 3.7"
-  gem 'awesome_print', "~> 1.8"
+  gem 'amazing_print', "~> 1.8"
   gem 'pry', "~> 0.11"
   gem 'rubocop'
   gem 'guard', "~> 2.14"
