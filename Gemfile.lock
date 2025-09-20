@@ -101,7 +101,7 @@ GEM
       listen (~> 3.0)
     reverse_markdown (3.0.0)
       nokogiri
-    rexml (3.4.1)
+    rexml (3.4.4)
     roda (3.96.0)
       rack
     rspec (3.13.1)
