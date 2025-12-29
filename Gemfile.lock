@@ -41,6 +41,7 @@ GEM
       guard (~> 2.1)
       guard-compat (~> 1.1)
       rspec (>= 2.99.0, < 4.0)
+    io-console (0.8.2)
     jaro_winkler (1.6.1)
     json (2.18.0)
     kramdown (2.5.1)
@@ -75,9 +76,10 @@ GEM
       ast (~> 2.4.1)
       racc
     prism (1.7.0)
-    pry (0.15.2)
+    pry (0.16.0)
       coderay (~> 1.1)
       method_source (~> 1.0)
+      reline (>= 0.6.0)
     public_suffix (5.0.4)
     puma (7.1.0)
       nio4r (~> 2.0)
@@ -97,6 +99,8 @@ GEM
     rbs (3.9.5)
       logger
     regexp_parser (2.11.3)
+    reline (0.6.3)
+      io-console (~> 0.5)
     rerun (0.13.1)
       listen (~> 3.0)
     reverse_markdown (3.0.0)
