@@ -19,12 +19,12 @@ class PerilousWilds < Roda
   plugin :head
   plugin :assets, css: 'style.scss'
   plugin :content_security_policy do |csp|
-    csp.default_src :none # deny everything by default
-    csp.style_src :self
-    csp.script_src :self
-    csp.connect_src :self
+    csp.default_src :self # deny everything by default
+    csp.style_src :self, "fonts.googleapis.com"
+    csp.script_src :Self,  "stats.perilous-wilds.rickenharp.cloud"
+    csp.connect_src :self, "stats.perilous-wilds.rickenharp.cloud"
     csp.img_src :self
-    csp.font_src :self
+    csp.font_src :self, "fonts.gstatic.com"
     csp.form_action :self
     csp.base_uri :none
     csp.frame_ancestors :none
