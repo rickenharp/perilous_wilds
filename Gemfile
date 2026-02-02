@@ -16,7 +16,7 @@ gem 'nokogiri', '>= 1.13.4'
 
 
 group :development do
-  gem 'rerun', '~> 0.13.1'
+  gem 'rerun', '~> 0.14.0'
   gem 'rb-fsevent'
   gem 'rspec', "~> 3.7"
   gem 'amazing_print', "~> 1.8"
