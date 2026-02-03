@@ -103,7 +103,7 @@ GEM
     regexp_parser (2.11.3)
     reline (0.6.3)
       io-console (~> 0.5)
-    rerun (0.13.1)
+    rerun (0.14.0)
       listen (~> 3.0)
     reverse_markdown (3.0.2)
       nokogiri
@@ -203,7 +203,7 @@ DEPENDENCIES
   racksh (~> 1.0)
   rake (~> 13.0)
   rb-fsevent
-  rerun (~> 0.13.1)
+  rerun (~> 0.14.0)
   roda (~> 3.10)
   rspec (~> 3.7)
   rubocop
