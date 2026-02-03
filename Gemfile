@@ -8,7 +8,7 @@ gem 'tilt', "~> 2.0"
 gem 'sassc', "~> 2.4"
 gem 'puma'
 gem 'base58', "~> 0.2"
-gem 'rack', "~> 2.2"
+gem 'rack', "~> 3.2"
 gem 'rack-ssl-enforcer'
 gem 'rake', "~> 13.0"
 gem 'nokogiri', '>= 1.13.4'
@@ -16,10 +16,10 @@ gem 'nokogiri', '>= 1.13.4'
 
 
 group :development do
-  gem 'rerun', '~> 0.13.1'
+  gem 'rerun', '~> 0.14.0'
   gem 'rb-fsevent'
   gem 'rspec', "~> 3.7"
-  gem 'amazing_print', "~> 1.8"
+  gem 'amazing_print', "~> 2.0"
   gem 'pry', "~> 0.11"
   gem 'rubocop'
   gem 'guard', "~> 2.14"
@@ -32,5 +32,5 @@ end
 group :test do
   gem 'capybara', '~> 3.35', '>= 3.35.3'
   gem 'simplecov', "~> 0.16", require: false
-  gem "climate_control", "~> 0.2"
+  gem "climate_control", "~> 1.2"
 end
