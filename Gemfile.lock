@@ -8,7 +8,7 @@ GEM
     backport (1.2.0)
     base58 (0.2.3)
     benchmark (0.5.0)
-    bigdecimal (4.0.1)
+    bigdecimal (4.1.0)
     capybara (3.40.0)
       addressable
       matrix
@@ -61,7 +61,7 @@ GEM
     logger (1.7.0)
     lumberjack (1.4.2)
     matrix (0.4.2)
-    mcp (0.8.0)
+    mcp (0.9.2)
       json-schema (>= 4.1)
     method_source (1.1.0)
     mini_mime (1.1.5)
