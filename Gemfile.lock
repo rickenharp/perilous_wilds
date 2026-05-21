@@ -101,8 +101,9 @@ GEM
     rb-fsevent (0.11.2)
     rb-inotify (0.11.1)
       ffi (~> 1.0)
-    rbs (3.10.3)
+    rbs (4.0.2)
       logger
+      prism (>= 1.6.0)
       tsort
     regexp_parser (2.12.0)
     reline (0.6.3)
@@ -151,7 +152,7 @@ GEM
       simplecov_json_formatter (~> 0.1)
     simplecov-html (0.12.3)
     simplecov_json_formatter (0.1.4)
-    solargraph (0.58.3)
+    solargraph (0.59.1)
       ast (~> 2.4.3)
       backport (~> 1.2)
       benchmark (~> 0.4)
@@ -166,7 +167,7 @@ GEM
       ostruct (~> 0.6)
       parser (~> 3.0)
       prism (~> 1.4)
-      rbs (>= 3.6.1, <= 4.0.0.dev.4)
+      rbs (>= 3.10.0)
       reverse_markdown (~> 3.0)
       rubocop (~> 1.76)
       thor (~> 1.0)
