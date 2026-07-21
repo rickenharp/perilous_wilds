@@ -31,6 +31,6 @@ end
 
 group :test do
   gem 'capybara', '~> 3.35', '>= 3.35.3'
-  gem 'simplecov', "~> 0.16", require: false
+  gem 'simplecov', "~> 1.0", require: false
   gem "climate_control", "~> 1.2"
 end
