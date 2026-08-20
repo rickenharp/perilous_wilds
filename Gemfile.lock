@@ -162,7 +162,7 @@ GEM
     sassc (2.4.0)
       ffi (~> 1.9)
     shellany (0.0.1)
-    simplecov (1.0.2)
+    simplecov (1.1.1)
     solargraph (0.60.3)
       ast (~> 2.4.3)
       backport (~> 1.2)
