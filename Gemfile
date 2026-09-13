@@ -25,7 +25,8 @@ group :development do
   gem 'guard', "~> 2.14"
   gem 'guard-rspec', "~> 4.7"
   gem 'racksh', "~> 1.0"
-  gem 'solargraph', "~> 0.49"
+  gem 'solargraph'
+  gem "ruby-lsp"
   gem "yard", ">= 0.9.36"
 end
 

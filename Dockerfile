@@ -1,12 +1,12 @@
-FROM ruby:3.4.1-alpine
+FROM ruby:3.4.9-alpine
 
 ARG bundle_without
 EXPOSE 3000
 
-RUN gem install bundler:2.6.3
+RUN gem install bundler:2.6.9
 RUN apk -U --no-cache upgrade
 RUN apk --update --no-cache add --virtual build_deps \
-  build-base libc-dev linux-headers
+  build-base libc-dev linux-headers curl yaml-dev
 RUN bundle config set --local deployment 'true' && \
   bundle config set --local without "$bundle_without"
 RUN mkdir -p /usr/src/app
