@@ -3,7 +3,7 @@ GEM
   specs:
     addressable (2.9.0)
       public_suffix (>= 2.0.2, < 8.0)
-    amazing_print (2.0.0)
+    amazing_print (3.0.0)
     ast (2.4.3)
     backport (1.2.0)
     base58 (0.2.3)
@@ -239,7 +239,7 @@ PLATFORMS
   x86_64-linux-musl
 
 DEPENDENCIES
-  amazing_print (~> 2.0)
+  amazing_print (~> 3.0)
   base58 (~> 0.2)
   capybara (~> 3.35, >= 3.35.3)
   climate_control (~> 1.2)
