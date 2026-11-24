@@ -35,7 +35,7 @@ GEM
     ffi (1.17.4-x86_64-linux-musl)
     formatador (1.2.3)
       reline
-    guard (2.20.2)
+    guard (2.21.0)
       formatador (>= 0.2.4)
       listen (>= 2.7, < 4.0)
       logger (~> 1.6)
@@ -51,7 +51,7 @@ GEM
       guard-compat (~> 1.1)
       rspec (>= 2.99.0, < 4.0)
     highline (3.0.1)
-    io-console (0.9.4)
+    io-console (0.9.5)
     jaro_winkler (1.7.0)
     json (3.1.0)
     kramdown (2.5.2)
@@ -60,7 +60,7 @@ GEM
       kramdown (~> 2.0)
     language_server-protocol (3.17.0.6)
     lint_roller (1.1.0)
-    listen (3.10.0)
+    listen (3.10.1)
       logger
       rb-fsevent (~> 0.10, >= 0.10.3)
       rb-inotify (~> 0.9, >= 0.9.10)
